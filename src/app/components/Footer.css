@@ -30,6 +30,7 @@
   border-right: solid 1px;
   margin-top: 1rem;
   flex: 1;
+  display: none;
 }
 .footer-right {
   flex: 1;
