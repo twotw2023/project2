@@ -1,0 +1,76 @@
+@font-face {
+  font-family: sprayFont;
+  src: url('/Spray-Letters.otf');
+}
+@font-face {
+  font-family: shablon;
+  src: url('/shablon.ttf');
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+}
+
+.nav-left {
+  font-family: sprayFont;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(240, 248, 255, 0.573);
+  border: rgba(240, 248, 255, 0.573);
+}
+
+.nav-logo {
+  color: #990101;
+  font-size: 1.9rem;
+  text-decoration: none;
+}
+.nav-logo p {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-right {
+  font-family: shablon;
+  margin-top: 1.4rem;
+}
+
+.nav-element {
+  color: #000000;
+  padding: 1.2rem 1rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  background-color: rgba(240, 248, 255, 0.573);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-element {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .nav-right {
+    margin-top: 1.2rem;
+  }
+
+  .nav-container {
+    padding: 1.3rem 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-right {
+    margin-top: 1.2rem;
+    display: none;
+  }
+}
