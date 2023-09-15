@@ -1,6 +1,7 @@
 .embed-container {
 display: flex;
     justify-content: center;
+    height: 100%;
 }
 .embed-container iframe,
 .embed-container object,
