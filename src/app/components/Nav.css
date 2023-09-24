@@ -1,11 +1,11 @@
-@font-face {
+/* @font-face {
   font-family: sprayFont;
   src: url('/Spray-Letters.otf');
 }
 @font-face {
   font-family: shablon;
   src: url('/shablon.ttf');
-}
+} */
 
 .nav-container {
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 .nav-left {
-  font-family: sprayFont;
+  font-family: var(--font-sprayFont);
   padding: 0;
   margin: 0;
   background-color: rgba(240, 248, 255, 0.573);
@@ -33,7 +33,7 @@
 }
 
 .nav-right {
-  font-family: shablon;
+  font-family: var(--font-shablon);
   margin-top: 1.4rem;
 }
 
