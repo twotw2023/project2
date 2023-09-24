@@ -1,7 +1,5 @@
 {
   "name": "project2",
   "builds": [{ "src": "package.json", "use": "@now/next" }],
-  "public": {
-    "directory": "public"
-  }
+  "public": true
 }
