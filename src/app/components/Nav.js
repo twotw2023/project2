@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { sprayFont, shablon } from '../fonts';
+import { sprayFont } from '../fonts';
 import './Nav.css';
 
 const Nav = () => {
@@ -14,7 +14,7 @@ const Nav = () => {
           </p>
         </Link>
       </div>
-      <div className={`${shablon.variable} nav-right`}>
+      <div className={` nav-right`}>
         <Link href='/exhibition' className='nav-element'>
           Online Exhibition
         </Link>
