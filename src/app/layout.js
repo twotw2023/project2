@@ -1,5 +1,6 @@
 import Footer from './components/Footer';
 import Nav from './components/Nav';
+import { body } from './fonts';
 import './layout.css';
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang='en' className={body.className}>
       <body className='background-image'>
         <main className='app'>
           <Nav />
