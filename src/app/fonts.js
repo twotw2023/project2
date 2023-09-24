@@ -5,7 +5,6 @@ export const shablon = localFont({
   src: './shablon.ttf',
   variable: '--font-shablon',
 });
-
 export const sprayFont = localFont({
   src: './Spray-Letters.otf',
   variable: '--font-sprayFont',
