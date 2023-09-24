@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { sprayFont, shablon } from '../fonts';
 import './Nav.css';
 
