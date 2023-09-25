@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,700;1,500;1,700&family=Saira+Stencil+One&display=swap');
+
+.exhibit-container {
+  background-color: rgba(240, 248, 255, 0.573);
+}
+
+h1 {
+  font-family: 'Saira Stencil One', cursive;
+  padding: 2rem 1.4rem;
+  font-size: 1.5rem;
+}
+
+.exhibit__desc {
+  font-family: var(--font-body);
+  padding: 2rem 1.4rem;
+  font-size: 1.2rem;
+}
