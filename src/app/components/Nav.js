@@ -14,12 +14,12 @@ const Nav = () => {
           </p>
         </Link>
       </div>
-      <div className={` nav-right`}>
-        <Link href='/exhibition' className='nav-element'>
-          Online Exhibition
-        </Link>
+      <div className={`nav-right`}>
         <Link href='/performance' className='nav-element'>
           Performance
+        </Link>
+        <Link href='/exhibition' className='nav-element'>
+          Online Exhibition
         </Link>
         <Link href='/about' className='nav-element'>
           About

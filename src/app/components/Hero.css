@@ -1,0 +1,10 @@
+.background-image {
+  /* width: 100vw; */
+  height: 100vh;
+  background-image: url('/wall-app.png');
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #9aa1a7;
+  overflow: auto;
+}

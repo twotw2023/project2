@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={body.className}>
-      <body className='background-image'>
+      <body>
         <main className='app'>
           <Nav />
           {children}
