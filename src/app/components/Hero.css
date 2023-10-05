@@ -8,3 +8,10 @@
   color: #9aa1a7;
   overflow: auto;
 }
+
+.video__container {
+  width: 100%;
+}
+video {
+  object-fit: cover;
+}

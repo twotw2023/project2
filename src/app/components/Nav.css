@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,700;1,500;1,700&family=Saira+Stencil+One&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,700;1,500;1,700&family=Saira+Stencil+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.5rem 1.5rem;
-  background-color: #f0f8ffbb;
+  padding: 1.2rem 1.5rem;
+  background-color: #f0f0f0bb;
 }
 
 .nav-left {
@@ -18,8 +18,13 @@
 
 .nav-logo {
   color: #990101;
-  font-size: 1.9rem;
+  /* font-size: 1.9rem; */
   text-decoration: none;
+  width: 1rem;
+}
+.nav-logo__img {
+  width: 12rem;
+  height: auto;
 }
 .nav-logo p {
   padding: 0;
@@ -27,16 +32,18 @@
 }
 
 .nav-right {
-  font-family: 'Saira Stencil One', cursive;
-  font-weight: 400;
-  font-size: 1.1rem;
+  /* font-family: 'Inter', sans-serif; */
+  /* font-weight: 600; */
+  /* font-size: 0.2rem; */
   margin-top: 1.4rem;
 }
 
 .nav-element {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   color: #000000;
   padding: 1.2rem 1rem;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-decoration: none;
   /* background-color: rgba(240, 248, 255, 0.573); */
 }
