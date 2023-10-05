@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b2b;
+  color: #fdfdfd;
+}
+.home__Welcome {
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 1rem 2rem;
+}
+
+.home__Welcome p {
+  line-height: 2rem;
+}

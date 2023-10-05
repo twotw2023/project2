@@ -15,11 +15,6 @@ const Nav = () => {
             height={100}
             className='nav-logo__img'
           />
-          {/* <p>
-            The Writings
-            <br />
-            on the Wall
-          </p> */}
         </Link>
       </div>
       <div className={`nav-right`}>
