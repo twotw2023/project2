@@ -11,7 +11,7 @@ const Hero = () => {
         playsInline
         className='background-video'
         width={900}
-        height={600}
+        height={900}
       >
         <source src='/video_hero.mp4' type='video/mp4' />
         Your browser does not support the video tag.
