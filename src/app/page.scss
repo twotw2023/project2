@@ -4,7 +4,7 @@
 
   color: #fdfdfd;
 }
-.home__Welcome {
+.container {
   font-family: 'Nunito Sans', sans-serif;
   padding: 1rem 2rem;
   display: flex;
@@ -13,12 +13,24 @@
   align-items: center;
 }
 
-.home__Welcome p {
+.container p {
   width: 80%;
   /* margin-top: 4rem; */
   padding: 1rem 2.5rem;
   line-height: 3.5rem;
   font-size: 1.6rem;
+  text-align: justify;
+}
+.home__performance {
+  background-color: #6d6d6d;
+  // flex-direction: column;
+}
+.home__performance__text {
+  flex: 2;
+}
+
+.home__performance__video {
+  flex: 1;
 }
 .home__slogan {
   background-color: #fdfdfd;
@@ -38,9 +50,8 @@
   font-size: 2.5rem;
   font-family: 'Oswald', sans-serif;
   color: #2b2b2b;
-  /* color: #fdfdfd; */
+  text-align: center;
   position: absolute;
-  /* top: 5rem; */
   z-index: 10;
 }
 .home__slogan__div {
@@ -73,3 +84,43 @@
   width: 40%;
   height: auto;
 }
+
+// curtain effect
+// :root {
+//   --minh: 98vh;
+//   --color1: #2d2d2d;
+//   --color2: #fdfdfd;
+// }
+
+// .curtain {
+//   /** create the "split" background **/
+//   background-image: linear-gradient(
+//     to bottom,
+//     var(--color2) 50%,
+//     var(--color1) 50%
+//   );
+// }
+
+// /** add extra space to the bottom (need this for the "sticky" effect) **/
+// .curtain::after {
+//   content: '';
+//   display: block;
+//   min-height: var(--minh);
+// }
+
+// .invert {
+//   /** make the content sticky **/
+//   position: sticky;
+//   top: 20px;
+
+//   /** blend the content with the contrast effect **/
+//   mix-blend-mode: difference;
+
+//   /** center the content **/
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   /** set the minimum height of the section **/
+//   min-height: var(--minh);
+// }

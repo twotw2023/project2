@@ -2,7 +2,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Hero from './components/Hero';
-import './page.css';
+import './page.scss';
 import Image from 'next/image';
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
     <section className='home'>
       <Hero />
       <div className='home__slogan'>
+        {/* <div className='invert'></div> */}
         <h3>
           Discover the untold stories of Iran's fight for freedom and democracy
           through art and expression
@@ -22,8 +23,8 @@ export default function Home() {
           className='home__slogan__div__Image'
         />
       </div>
-      <div className='home__Welcome'>
-        <div className='home__welcome__text'>
+      <div className='home__Welcome container'>
+        <div className='home__welcome__text text'>
           <p>
             The Writings on the Wall is a politically independent cultural
             initiative dedicated to amplifying the voices of the Iranian people
@@ -101,6 +102,29 @@ export default function Home() {
               height={500}
             />
           </Carousel>
+        </div>
+      </div>
+      <div className='home__performance container'>
+        <div className='home__performance__video'>
+          <video
+            autoPlay
+            muted
+            playsInline
+            className='background-video'
+            width={900}
+            height={600}
+          >
+            <source src='/teaser.mp4' type='video/mp4' />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className='home__performance__text text'>
+          <p>
+            Bear witness to the alchemy of street art as we resurrect the echoes
+            of slogans found on the walls of Iranian cities. These slogans,
+            erased or transformed by the regime, are symbols of unyielding
+            resistance.
+          </p>
         </div>
       </div>
     </section>
