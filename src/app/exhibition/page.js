@@ -30,4 +30,23 @@ const page = () => {
   );
 };
 
+export const getStaticProps = async () => {
+  const client = await connectToDatabase();
+  const clientCollection = client.db('azad').collection('wall');
+  const meetups = await clientCollection.find().toArray();
+  return {
+    props: {
+      artWorks: artWorks.map((artWork) => ({
+        title: artWork.title,
+        image: artWork.image,
+        artist: artWork.artist,
+        statement: artWork.statement,
+        id: artWork._id.toString(),
+        material: artWork.material,
+      })),
+    },
+    revalidate: 1,
+  };
+};
+
 export default page;
