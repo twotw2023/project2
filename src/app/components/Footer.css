@@ -49,6 +49,7 @@
 }
 
 .title {
+  display: none;
   padding: 1rem;
   font-family: sprayFont;
   font-size: 1.2rem;
