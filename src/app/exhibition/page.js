@@ -1,7 +1,28 @@
+'use client';
 import { body } from '../fonts';
+import ArtworksList from '../components/ArtworksList';
 import './page.css';
 
-const page = () => {
+export const getStaticProps = async () => {
+  const client = await connectToDatabase();
+  const clientCollection = client.db().collection('wall');
+  const artWorks = await clientCollection.find({}).toArray();
+  return {
+    props: {
+      artWorks: artWorks.map((artWork) => ({
+        title: artWork.title,
+        image: artWork.image,
+        artist: artWork.artist,
+        statement: artWork.statement,
+        id: artWork._id.toString(),
+        material: artWork.material,
+      })),
+    },
+    revalidate: 1,
+  };
+};
+
+const page = (props) => {
   return (
     <section className='exhibit-container'>
       <h1>Online Exhibition</h1>
@@ -26,27 +47,12 @@ const page = () => {
         purus. Sem nulla pharetra diam sit amet nisl suscipit. Nibh nisl
         condimentum id venenatis a condimentum.
       </p>
+
+      {console.log(props)}
+      {/* <p>{props}</p> */}
+      {/* <ArtworksList artWorks={props.artWorks} /> */}
     </section>
   );
-};
-
-export const getStaticProps = async () => {
-  const client = await connectToDatabase();
-  const clientCollection = client.db('azad').collection('wall');
-  const meetups = await clientCollection.find().toArray();
-  return {
-    props: {
-      artWorks: artWorks.map((artWork) => ({
-        title: artWork.title,
-        image: artWork.image,
-        artist: artWork.artist,
-        statement: artWork.statement,
-        id: artWork._id.toString(),
-        material: artWork.material,
-      })),
-    },
-    revalidate: 1,
-  };
 };
 
 export default page;

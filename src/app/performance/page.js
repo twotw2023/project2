@@ -1,7 +1,8 @@
-import React from 'react';
+import { Fragment } from 'react';
+import './page.css';
 
-const page = () => {
-  return <div>page</div>;
+const Performance = () => {
+  return <section className='performance'>Performance</section>;
 };
 
-export default page;
+export default Performance;

@@ -1,7 +1,7 @@
-import React from 'react';
+import './page.css';
 
-const page = () => {
-  return <div>page</div>;
+const About = () => {
+  return <section className='About'>About</section>;
 };
 
-export default page;
+export default About;

@@ -2,6 +2,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #ebe8e8;
 }
 main {
   padding: 0;
@@ -16,6 +17,8 @@ main {
   width: 100%;
 }
 .app__bottom {
+  height: 100vh;
+  width: auto;
   /* position: absolute;
   top: 0;
   z-index: -1; */

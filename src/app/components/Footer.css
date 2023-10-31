@@ -18,8 +18,10 @@
   /* left: 0; */
   width: 100%;
   /* height: 60px; */
-  background: #004743;
-  margin-top: 0.5rem;
+  filter: contrast(170%) brightness(100%);
+  background: linear-gradient(0deg, rgba(0, 71, 67, 1), rgba(0, 0, 0, 0)),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  margin-top: 4rem;
 }
 
 .footer-container {
@@ -33,11 +35,44 @@
   flex-direction: row;
 }
 
-.footer-list li {
-  padding-right: 1rem;
+.footer-list.sponsors {
+  flex-wrap: wrap;
+  width: 40rem;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
 }
+
+.socialMedia {
+  width: 5rem;
+  align-items: center;
+  padding-left: 32px;
+}
+
+.footer-list li {
+  /* padding-right: 1rem; */
+  flex: 1;
+}
+
+.footer-list-logo {
+  width: 6rem;
+  height: auto;
+}
+
+.abf {
+  width: 4rem;
+}
+
+.gtb {
+  width: 8rem;
+}
+
+.vg {
+  width: 8rem;
+}
+
 .footer-left {
-  border-right: solid 1px;
+  border-right: 1px #ebe8e8;
   margin-top: 1rem;
   flex: 1;
   /* display: none; */
@@ -48,13 +83,13 @@
 }
 
 .title {
-  padding: 1rem;
+  padding: 1rem 2rem 0rem;
   font-family: sprayFont;
   font-size: 1.2rem;
 }
 
 .footer-copyright {
-  padding: 1rem;
+  padding: 1rem 2rem 2rem;
   font-family: sans-serif;
   font-size: 0.6rem;
 }

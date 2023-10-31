@@ -127,6 +127,23 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <div className='home__exhibition container'>
+        <div className='home__Exhibition__text text'>
+          <p>
+            Explore a diverse collection of artwork, created by Iranian
+            activists and artists, as they share their perspectives in Persian,
+            English, and Swedish.
+          </p>
+        </div>
+        <div className='home__exhibition__image'>
+          <Image
+            src='/collage.png'
+            width={350}
+            height={500}
+            alt='Online-Exhibition'
+          />
+        </div>
+      </div>
     </section>
   );
 }
