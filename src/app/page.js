@@ -114,7 +114,7 @@ export default function Home() {
             width={900}
             height={600}
           >
-            <source src='/teaser.mp4' type='video/mp4' />
+            <source src='/teaser-small.mp4' type='video/mp4' />
             Your browser does not support the video tag.
           </video>
         </div>
