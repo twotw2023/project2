@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 .About {
-  height: 44vmax;
+  /* height: 44vmax; */
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 10rem;
+  margin-bottom: 7rem;
+  /* width: 70%; */
+}
+p {
+  font-family: 'Familjen Grotesk', sans-serif;
+  /* padding: 0rem 2.5rem; */
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  /* text-align: center; */
+}
+
+.azad__section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+}
+
+.azad__ImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.azad__ImageContainer img {
+  width: 34vw;
+  height: auto;
 }

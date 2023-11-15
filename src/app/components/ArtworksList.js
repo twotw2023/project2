@@ -1,19 +1,26 @@
-import React from 'react';
-import { ArtWorkItem } from './ArtWorkItem';
+import './ArtWorkList.css';
+import ArtWorkItem from './ArtWorkItem';
 
-const ArtworksList = (props) => {
+const ArtworksList = ({ artWorks }) => {
+  console.log(artWorks);
+  // artWorks.map((artWork) => ({
+  //   title: artWork.title,
+  //   image: artWork.image,
+  //   artist: artWork.artist,
+  //   statement: artWork.statement,
+  //   id: artWork.id,
+  //   video: artWork.video,
+  // }));
   return (
     <ul className='artWorksList'>
-      {console.log(props, 'artworks')}
-      {props.artWorks.map((artWork) => (
+      {artWorks.map((artWork) => (
         <ArtWorkItem
-          key={artWork.id}
           id={artWork.id}
           title={artWork.title}
           image={artWork.image}
           artist={artWork.artist}
           statement={artWork.statement}
-          material={artWork.material}
+          video={artWork.video}
         />
       ))}
     </ul>

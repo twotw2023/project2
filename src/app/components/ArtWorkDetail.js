@@ -6,7 +6,7 @@ const ArtWorkDetail = (props) => {
       <img src={props.image} alt={props.title} />
       <h1>{props.title}</h1>
       <h2>{props.artist}</h2>
-      <h3>{props.material}</h3>
+      {/* <h3>{props.material}</h3> */}
       <p>{props.statement}</p>
     </section>
   );

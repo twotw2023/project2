@@ -1,0 +1,81 @@
+.artWork__item {
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.artWork__media {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+.artWork__media video {
+  width: 15rem;
+  height: 15rem;
+}
+.artWork__image {
+  width: auto;
+  height: 15rem;
+  right: auto;
+  left: auto;
+}
+
+.artWork--hover {
+  background-image: url('/exhibition/frame.png');
+  background-size: cover;
+  width: 15rem;
+  height: 15rem;
+  display: none;
+}
+
+.artWork__media:hover {
+  cursor: pointer;
+}
+
+.artWork__media:hover .artWork__video,
+.artWork__media:hover .artWork__image {
+  filter: blur(2px) grayscale() brightness(0.4);
+}
+.artWork__media:hover .artWork--hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.artWork__video {
+  background-color: #000000;
+}
+.artWork__content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.artWork__content h3 {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 1.25rem;
+  /* color: #004733; */
+  color: #fafafa;
+}
+
+.artWork__actions {
+  padding: 0rem;
+  text-align: center;
+}
+
+.artWork__actions button {
+  font-family: 'Familjen Grotesk', sans-serif;
+  cursor: pointer;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+/* .actions button:hover,
+.actions button:active {
+  background-color: #fafafa;
+} */

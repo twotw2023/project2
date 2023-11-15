@@ -1,21 +1,25 @@
 'use client';
-import { useState } from 'react';
+import { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-// import Hero from './components/Hero';
+import Hero from './components/Hero';
 import './page.scss';
 import Image from 'next/image';
-
-// Client Components:
-const Hero = dynamic(() => import('./components/Hero'));
+import Intro from './components/Intro';
 
 export default function Home() {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
   return (
     <section className='home'>
       <Hero />
       <div className='home__slogan'>
-        {/* <div className='invert'></div> */}
         <h3>
           Discover the untold stories of Iran's fight for freedom and democracy
           through art and expression
