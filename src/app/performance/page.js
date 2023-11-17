@@ -43,6 +43,7 @@ export default function Page() {
   return (
     <main className={`${styles.main} performance`}>
       {/* <Image src='/exhibition/a.png' fill={true} alt='background' /> */}
+      {/* <Image src='/exhibition/a.png' fill={true} alt='background' /> */}
       <video
         autoPlay
         muted
