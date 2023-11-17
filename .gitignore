@@ -131,3 +131,4 @@ dist
 
 # large files
 public/teaser.mp4
+.vercel

@@ -7,20 +7,22 @@ import Hero from './components/Hero';
 import './page.scss';
 import Image from 'next/image';
 import Intro from './components/Intro';
+import CarouselUI from './components/home/Carousel';
 
 export default function Home() {
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import('locomotive-scroll')).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   return (
     <section className='home'>
       <Hero />
       <div className='home__slogan'>
-        <h3>
+        <CarouselUI />
+        {/* <h3>
           Discover the untold stories of Iran's fight for freedom and democracy
           through art and expression
         </h3>
@@ -30,7 +32,7 @@ export default function Home() {
           width={1600}
           height={900}
           className='home__slogan__div__Image'
-        />
+        /> */}
       </div>
       <div className='home__Welcome container'>
         <div className='home__welcome__text text'>
@@ -143,18 +145,22 @@ export default function Home() {
         <div className='home__Exhibition__text text'>
           <p>
             Explore a diverse collection of artwork, created by Iranian
-            activists and artists, as they share their perspectives in Persian,
-            English, and Swedish.
+            activists and artists, as they share their perspectives.
           </p>
         </div>
-        <div className='home__exhibition__image'>
+        {/* <div className=''>
+        </div> */}
+        {/* <div className='home__exhibition__image'>
           <Image
-            src='/collage.png'
-            width={350}
-            height={500}
-            alt='Online-Exhibition'
+          src='/collage.png'
+          width={350}
+          height={500}
+          alt='Online-Exhibition'
           />
-        </div>
+        </div> */}
+      </div>
+      <div className='home__carousel'>
+        <CarouselUI />
       </div>
     </section>
   );
