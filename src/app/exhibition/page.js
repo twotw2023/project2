@@ -41,11 +41,11 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Image src='/exhibition/background.jpg' fill={true} alt='background' />
+      <Image src='/exhibition/a.png' fill={true} alt='background' />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Freelance Developer -</p>
-          <p ref={secondText}>Freelance Developer -</p>
+          <p ref={firstText}>Coming Soon ...</p>
+          <p ref={secondText}>Coming Soon ...</p>
         </div>
       </div>
     </main>
