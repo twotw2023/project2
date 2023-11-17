@@ -119,7 +119,7 @@ export default function Home() {
             autoPlay
             muted
             playsInline
-            className='background-video'
+            className='background-video a'
             width={900}
             height={600}
           >
