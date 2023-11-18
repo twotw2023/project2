@@ -1,0 +1,67 @@
+@import url('https://use.typekit.net/zux4qdk.css');
+
+.carousel__item {
+  /* background-color: red; */
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.carousel__media {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+.carousel__media video {
+  width: 15rem;
+  height: 15rem;
+}
+.carousel__image {
+  width: auto;
+  height: 15rem;
+  right: auto;
+  left: auto;
+}
+
+.carousel--hover {
+  background-image: url('/exhibition/frame.png');
+  background-size: cover;
+  width: 15rem;
+  height: 15rem;
+  display: none;
+}
+
+.carousel__media:hover {
+  cursor: pointer;
+}
+
+.carousel__media:hover .carousel__video,
+.carousel__media:hover .carousel__image {
+  filter: blur(2px) grayscale() brightness(0.4);
+}
+.carousel__media:hover .carousel--hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.carousel__video {
+  background-color: #000000;
+}
+.carousel__content {
+  font-family: 'gunplay', sans-serif;
+  text-align: right;
+  padding: 7.5rem 1.5rem 0rem 0rem;
+}
+
+.carousel__content h3 {
+  font-family: 'gunplay', sans-serif;
+  font-size: 1.25rem;
+  color: #fafafa;
+  font-weight: 100;
+  text-align: right;
+  /* padding: 6.5rem 1.5rem 0rem 0rem; */
+}

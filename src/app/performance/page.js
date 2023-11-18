@@ -2,8 +2,8 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import { useRef, useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './page.css';
 
 export default function Page() {

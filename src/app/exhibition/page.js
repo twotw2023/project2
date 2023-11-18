@@ -2,8 +2,8 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import { useRef, useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function Home() {
   const firstText = useRef(null);
@@ -41,7 +41,18 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Image src='/exhibition/a.png' fill={true} alt='background' />
+      <Image
+        src='/exhibition/a.png'
+        fill={true}
+        alt='background'
+        className={styles.exhibition__image}
+      />
+      <Image
+        src='/exhibition/a.png'
+        fill={true}
+        alt='background'
+        className={styles.mobile__image}
+      />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Coming Soon ...</p>

@@ -1,6 +1,6 @@
-import ArtWorkItem from '../ArtWorkItem';
 import './Carousel.css';
 import { cardDetails } from '@/app/lib/featured';
+import CarouselItem from './CarouselItem';
 
 const CarouselUI = () => {
   return (
@@ -8,20 +8,20 @@ const CarouselUI = () => {
       <div className='carousel-track'>
         {Object.keys(cardDetails).map((detailKey) => {
           return (
-            <ArtWorkItem
+            <CarouselItem
               image={cardDetails[detailKey].image}
               title={cardDetails[detailKey].title}
               artist={cardDetails[detailKey].artist}
-            ></ArtWorkItem>
+            ></CarouselItem>
           );
         })}
         {Object.keys(cardDetails).map((detailKey) => {
           return (
-            <ArtWorkItem
+            <CarouselItem
               image={cardDetails[detailKey].image}
               title={cardDetails[detailKey].title}
               artist={cardDetails[detailKey].artist}
-            ></ArtWorkItem>
+            ></CarouselItem>
           );
         })}
       </div>

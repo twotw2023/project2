@@ -28,7 +28,7 @@ const About = () => {
       <section className='azad__section'>
         <div className='azad__ImageContainer'>
           <Image
-            src='/about/azad--greenFrame.png'
+            src='/about/azad--circle--transparent.png'
             width={600}
             height={600}
             alt='Azad Larki Profile Photo'

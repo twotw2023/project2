@@ -20,9 +20,9 @@ export default function Home() {
   return (
     <section className='home'>
       <Hero />
-      <div className='home__slogan'>
+      {/* <div className='home__slogan'>
         <CarouselUI />
-        {/* <h3>
+        <h3>
           Discover the untold stories of Iran's fight for freedom and democracy
           through art and expression
         </h3>
@@ -32,9 +32,9 @@ export default function Home() {
           width={1600}
           height={900}
           className='home__slogan__div__Image'
-        /> */}
-      </div>
-      <div className='home__Welcome container'>
+        />
+      </div> */}
+      <div className='home__welcome container'>
         <div className='home__welcome__text text'>
           <p>
             The Writings on the Wall is a politically independent cultural
@@ -48,7 +48,7 @@ export default function Home() {
             showArrows={true}
             showIndicators={false}
             showStatus={false}
-            autoPlay={false}
+            autoPlay={true}
             emulateTouch={true}
             dynamicHeight={false}
             infiniteLoop={true}
@@ -116,38 +116,37 @@ export default function Home() {
         </div>
       </div>
       <div className='home__performance container'>
-        <div className='home__performance__video'>
-          <video
-            autoPlay
-            muted
-            playsInline
-            className='background-video a'
-            width={900}
-            height={600}
-          >
-            <source
-              src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/video/upload/v1698791186/project/teaser_l6z2iz.mp4`}
-              type='video/mp4'
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div className='home__performance__text text'>
-          <p>
-            Bear witness to the alchemy of street art as we resurrect the echoes
-            of slogans found on the walls of Iranian cities. These slogans,
-            erased or transformed by the regime, are symbols of unyielding
-            resistance.
-          </p>
+        <h1 className='home__h1'>Performance</h1>
+        <div className='home__performance__textVideo'>
+          <div className='home__performance__video'>
+            <video
+              autoPlay
+              muted
+              playsInline
+              className='background-video a'
+              width={900}
+              height={600}
+              loop={true}
+            >
+              <source
+                src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/video/upload/v1698791186/project/teaser_l6z2iz.mp4`}
+                type='video/mp4'
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className='home__performance__text text'>
+            <p>
+              Bear witness to the alchemy of street art as we resurrect the
+              echoes of slogans found on the walls of Iranian cities.
+            </p>
+          </div>
         </div>
       </div>
       <div className='home__exhibition container'>
-        <div className='home__Exhibition__text text'>
-          <p>
-            Explore a diverse collection of artwork, created by Iranian
-            activists and artists, as they share their perspectives.
-          </p>
-        </div>
+        {/* <div className='home__Exhibition__text text'> */}
+        <h1 className='home__h1'>Online Exhibition</h1>
+        {/* </div> */}
         {/* <div className=''>
         </div> */}
         {/* <div className='home__exhibition__image'>

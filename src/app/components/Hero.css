@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 .hero__bg {
   position: absolute;
