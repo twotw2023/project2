@@ -12,6 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <link rel='stylesheet' href='https://use.typekit.net/zux4qdk.css'></link>
       <body>
         <main className='app'>
           <section className='app__top'>
