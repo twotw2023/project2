@@ -19,7 +19,7 @@
   padding: 1rem 2.5rem;
   line-height: 2.5rem;
   font-size: 1.5rem;
-  text-align: justify;
+  // text-align: justify;
   color: #2b2b2b;
   font-family: 'Familjen Grotesk', sans-serif;
 }
@@ -139,7 +139,7 @@
     flex-direction: column;
     margin-top: 0;
   }
-  .home__welcome .container {
+  .home__welcome.container {
     padding: 0;
   }
   .container p {
@@ -163,9 +163,10 @@
     top: 2vw;
   }
   .home__performance__video video {
-    width: 60%;
-    object-fit: contain;
-    height: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    margin-top: 15rem;
   }
   .home__exhibition.container {
     align-items: center;
@@ -178,14 +179,31 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .video__container {
+  .home {
+    overflow-x: hidden;
+  }
+  .container.video__container {
     margin-top: -12rem;
   }
-  .home__welcome .container {
+  .video__container video {
+    object-fit: cover;
+    width: auto;
+    height: 70%;
+    margin-top: 11rem;
+  }
+  .home__welcome.container {
     padding: 0;
+    margin-top: 8rem;
+    background-image: none;
   }
   .home__welcome__text {
     margin-top: -13rem;
+  }
+  .container p {
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8rem;
   }
   .text {
     display: flex;
@@ -196,12 +214,46 @@
     padding: 0;
   }
   .carousel-root {
-    width: 94%;
+    width: 120%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .home__performance__video {
+    width: 100%;
+    padding: 0;
   }
   .home__performance__video video {
-    width: 90%;
+    width: 140%;
     height: auto;
     object-fit: contain;
+    margin-top: 1rem;
+  }
+  .home__h1 {
+    font-size: 5vw;
+    margin: 0.1rem 0rem;
+    padding: 0rem 2rem;
+  }
+  .home__performance {
+    background-image: url(/arrow/arrow--red.png);
+    background-repeat: repeat;
+    // background-size: 30%;
+    background-position-x: -20%;
+    background-position-y: 50%;
+  }
+  .home__performance__textVideo:hover .home__performance__text {
+    display: none;
+  }
+  .home__performance__text {
+    display: none;
+  }
+  .home__carousel--infinite {
+    height: 23vh;
+  }
+  .home__exhibition.container {
+    background-image: none;
+  }
+  .home__performance__video:hover video {
+    filter: blur(0) grayscale(0) brightness(1);
   }
 }
 

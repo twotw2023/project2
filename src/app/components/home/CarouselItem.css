@@ -65,3 +65,22 @@
   text-align: right;
   /* padding: 6.5rem 1.5rem 0rem 0rem; */
 }
+
+@media only screen and (max-width: 480px) {
+  .carousel__media {
+    width: 10rem;
+    height: 10rem;
+  }
+  .carousel__image {
+    height: 10rem;
+  }
+
+  .carousel__item {
+    margin: 0.4rem;
+  }
+
+  .carousel--hover {
+    width: 10rem;
+    height: 10rem;
+  }
+}

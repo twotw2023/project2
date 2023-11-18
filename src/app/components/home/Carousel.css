@@ -54,3 +54,8 @@
     left: -100%;
   }
 }
+@media only screen and (max-width: 480px) {
+  .carousel-track .artWork__item {
+    margin: 0.5rem 0.1rem;
+  }
+}

@@ -37,10 +37,10 @@ export default function Home() {
       <div className='home__welcome container'>
         <div className='home__welcome__text text'>
           <p>
-            The Writings on the Wall is a politically independent cultural
-            initiative dedicated to amplifying the voices of the Iranian people
-            in their ongoing struggle for freedom, political autonomy, and
-            economic democracy.
+            <strong>The Writings on the Wall</strong> is a politically
+            independent cultural initiative dedicated to amplifying the voices
+            of the Iranian people in their ongoing struggle for freedom,
+            political autonomy, and economic democracy.
           </p>
         </div>
         <div className='home__welcome__carouselContainer'>
