@@ -159,7 +159,7 @@ export default function Home() {
           />
         </div> */}
       </div>
-      <div className='home__carousel'>
+      <div className='home__carousel--infinite'>
         <CarouselUI />
       </div>
     </section>
