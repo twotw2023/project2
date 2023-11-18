@@ -22,7 +22,7 @@ p {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .azad__ImageContainer {
@@ -32,10 +32,67 @@ p {
 }
 
 .azad__ImageContainer img {
-  width: 34vw;
+  width: 35rem;
   height: auto;
 }
 
+@media only screen and (max-width: 1100px) {
+  .About {
+    padding: 0rem 2rem;
+    margin-top: 6rem;
+  }
+  p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0rem 2rem;
+  }
+  .azad__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .azad__ImageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .azad__ImageContainer img {
+    width: 35rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .About {
+    padding: 0rem 2rem;
+    margin-top: 6rem;
+  }
+  p {
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .azad__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .azad__ImageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .azad__ImageContainer img {
+    width: 80vw;
+    height: auto;
+  }
+}
 @media only screen and (max-width: 480px) {
   .About {
     padding: 0rem 2rem;
