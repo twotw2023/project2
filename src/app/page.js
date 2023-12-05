@@ -1,39 +1,15 @@
 'use client';
-import { useEffect } from 'react';
-import dynamic from 'next/dynamic';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Hero from './components/Hero';
 import './page.scss';
 import Image from 'next/image';
-import Intro from './components/Intro';
 import CarouselUI from './components/home/Carousel';
 
 export default function Home() {
-  // useEffect(() => {
-  //   (async () => {
-  //     const LocomotiveScroll = (await import('locomotive-scroll')).default;
-  //     const locomotiveScroll = new LocomotiveScroll();
-  //   })();
-  // }, []);
-
   return (
     <section className='home'>
       <Hero />
-      {/* <div className='home__slogan'>
-        <CarouselUI />
-        <h3>
-          Discover the untold stories of Iran's fight for freedom and democracy
-          through art and expression
-        </h3>
-        <Image
-          src='/sprayed-pattern-3.png'
-          alt='spray pattern'
-          width={1600}
-          height={900}
-          className='home__slogan__div__Image'
-        />
-      </div> */}
       <div className='home__welcome container'>
         <div className='home__welcome__text text'>
           <p>
@@ -144,19 +120,7 @@ export default function Home() {
         </div>
       </div>
       <div className='home__exhibition container'>
-        {/* <div className='home__Exhibition__text text'> */}
         <h1 className='home__h1'>Online Exhibition</h1>
-        {/* </div> */}
-        {/* <div className=''>
-        </div> */}
-        {/* <div className='home__exhibition__image'>
-          <Image
-          src='/collage.png'
-          width={350}
-          height={500}
-          alt='Online-Exhibition'
-          />
-        </div> */}
       </div>
       <div className='home__carousel--infinite'>
         <CarouselUI />
