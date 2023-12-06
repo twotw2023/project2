@@ -1,9 +1,10 @@
 'use client';
 import Image from 'next/image';
 import styles from './page.module.css';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Countdown, { calcTimeDelta } from 'react-countdown';
 
 export default function Home() {
   const firstText = useRef(null);
@@ -11,6 +12,11 @@ export default function Home() {
   const slider = useRef(null);
   let xPercent = 0;
   let direction = -1;
+
+  // timer
+
+  const lunchTime = calcTimeDelta('2024/01/01');
+  // console.log(lunchTime);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -41,18 +47,29 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Image
-        src='/exhibition/a.png'
-        fill={true}
-        alt='background'
-        className={styles.exhibition__image}
-      />
-      <Image
-        src='/exhibition/a.png'
-        fill={true}
-        alt='background'
-        className={styles.mobile__image}
-      />
+      <div className={styles.container}>
+        <div className={styles.images}>
+          <Image
+            src='/exhibition/a.png'
+            width={3840}
+            height={2400}
+            alt='background'
+            className={styles.exhibition__image}
+          />
+          <Image
+            src='/exhibition/a.png'
+            fill={true}
+            alt='background'
+            className={styles.mobile__image}
+          />
+        </div>
+        <div className={styles.containerCount}>
+          <h1>Exhibition Opening:</h1>
+          <div className={styles.countDown}>
+            <Countdown date={Date.now() + lunchTime.total} />
+          </div>
+        </div>
+      </div>
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Coming Soon ...</p>
