@@ -104,10 +104,7 @@ export default function Home() {
               height={600}
               loop={true}
             >
-              <source
-                src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/video/upload/v1698791186/project/teaser_l6z2iz.mp4`}
-                type='video/mp4'
-              />
+              <source src='../../static/teaser.mp4' type='video/mp4' />
               Your browser does not support the video tag.
             </video>
           </div>
