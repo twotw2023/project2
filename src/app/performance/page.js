@@ -54,7 +54,7 @@ export default function Page() {
         loop={true}
       >
         <source
-          src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/video/upload/v1703695549/teaser-no-subtitle_qgjcd1.mp4
+          src={`https://res.cloudinary.com/doiriwp8w/video/upload/v1703695549/teaser-no-subtitle_qgjcd1.mp4
           `}
           type='video/mp4'
         />
