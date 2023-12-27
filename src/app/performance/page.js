@@ -13,15 +13,6 @@ export default function Page() {
   let xPercent = 0;
   let direction = -1;
 
-  const handleVideoReady = (event) => {
-    event.target.play();
-    console.log(event.target);
-  };
-
-  const handlePlay = (event) => {
-    console.log(loaded);
-  };
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(slider.current, {
@@ -51,26 +42,26 @@ export default function Page() {
 
   return (
     <main className={`${styles.main} performance`}>
-      {/* <Image src='/exhibition/a.png' fill={true} alt='background' /> */}
-      {/* <Image src='/exhibition/a.png' fill={true} alt='background' /> */}
-      <video
-        autoPlay
-        muted
-        playsInline
-        className='performance__video'
-        width={1400}
-        height={875}
-        loop={true}
-        onLoad={handlePlay}
-        onCanPlay={handleVideoReady}
-      >
-        <source
-          src={`https://res.cloudinary.com/doiriwp8w/video/upload/v1703695549/teaser-no-subtitle_qgjcd1.mp4
+      <div>
+        {/* <Image src='/exhibition/a.png' fill={true} alt='background' /> */}
+        {/* <Image src='/exhibition/a.png' fill={true} alt='background' /> */}
+        <video
+          autoPlay
+          muted
+          playsInline
+          className='performance__video'
+          width={1400}
+          height={875}
+          loop={true}
+        >
+          <source
+            src={`https://res.cloudinary.com/doiriwp8w/video/upload/v1703695549/teaser-no-subtitle_qgjcd1.mp4
           `}
-          type='video/mp4'
-        />
-        Your browser does not support the video tag.
-      </video>
+            type='video/mp4'
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Coming Soon ...</p>

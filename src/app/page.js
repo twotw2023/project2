@@ -104,7 +104,10 @@ export default function Home() {
               height={600}
               loop={true}
             >
-              <source src='../../static/teaser.mp4' type='video/mp4' />
+              <source
+                src='https://res.cloudinary.com/doiriwp8w/video/upload/v1703695549/teaser-no-subtitle_qgjcd1.mp4'
+                type='video/mp4'
+              />
               Your browser does not support the video tag.
             </video>
           </div>
