@@ -52,7 +52,10 @@ const Hero = () => {
         height={900}
         onCanPlay={handleVideoReady}
       >
-        <source src='../static/wall.mp4' type='video/mp4' />
+        <source
+          src={`https://res.cloudinary.com/doiriwp8w/video/upload/v1703694140/wall_ogpipm.mp4`}
+          type='video/mp4'
+        />
         Your browser does not support the video tag.
       </video>
     </div>
