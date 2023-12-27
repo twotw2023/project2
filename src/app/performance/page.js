@@ -54,8 +54,9 @@ export default function Page() {
         loop={true}
       >
         <source
-          src={`https://res.cloudinary.com/doiriwp8w/video/upload/v1703695549/teaser-no-subtitle_qgjcd1.mp4
-          `}
+          // src={`https://res.cloudinary.com/doiriwp8w/video/upload/v1703695549/teaser-no-subtitle_qgjcd1.mp4
+          // `}
+          src='../../../static/teaser-no-subtitle.mp4'
           type='video/mp4'
         />
         Your browser does not support the video tag.
