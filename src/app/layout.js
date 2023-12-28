@@ -1,3 +1,5 @@
+import 'react-multi-carousel/lib/styles.css';
+
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import { body } from './fonts';
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </section>
         </main>
+        <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js'></script>
       </body>
     </html>
   );
