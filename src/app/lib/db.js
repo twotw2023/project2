@@ -101,11 +101,6 @@ export const data = {
          photojournalists, the nurse herself, and a photographer on assignment to cover her story. Journalists and photographers attempting to report on the protests face reprisals
          from the Iranian regime, ranging from intimidation to arrest and violent abuse. Due to state repression, it is difficult to know what is really happening inside the country.
          The photographers who captured the images seen here remain anonymous for security reasons. 
-         Story, Executive Producer: Hossein Fatemi
-         Editor: Hamid Reza
-         Producer: Q.S 
-         Photographers: 10 anonymous Middle East Images
-         photographers Licence: Middle East Images/IranWire
         `,
       },
     ],

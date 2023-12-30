@@ -10,7 +10,7 @@ const ArtWorkItem = (props) => {
   const router = useRouter();
 
   const showDetailHandler = () => {
-    router.push('/' + props.artist);
+    router.push('/exhibition');
   };
 
   // const handleHoverIn = () => {

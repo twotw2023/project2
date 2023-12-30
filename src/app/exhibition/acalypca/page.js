@@ -26,18 +26,7 @@ const page = () => {
     <div className='mt-16'>
       <h1>Acalpca</h1>
       <Link href=''>about the artist</Link>
-      <LightGallery onInit={onInit} plugins={[lgZoom, lgVideo]} mode='lg-fade'>
-        {artworks.map((item) => (
-          <a
-            className='gallery-item'
-            data-src={item.src}
-            key={item.id}
-            href={item.src}
-          >
-            <Image src={item.src} alt={item.statement} fill />
-          </a>
-        ))}
-      </LightGallery>
+
       {/* <div>
         <LightGallery plugins={[lgZoom, lgVideo]} mode='lg-fade'>
           {artworks.map((item) => {
