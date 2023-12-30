@@ -1,6 +1,6 @@
 export const data = {
   0: {
-    image: '/featured/samaneh_roghani.png',
+    image: '',
     artist: 'Acalypca',
     artworks: [
       {
