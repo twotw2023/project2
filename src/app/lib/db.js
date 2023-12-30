@@ -688,7 +688,7 @@ export const data = {
     `,
   },
   3: {
-    image: '/exhibition/ahoora/01.mp3',
+    image: '/exhibition/ahoora/02.jpg',
     artist: 'Ahoora',
     artworks: [
       {
