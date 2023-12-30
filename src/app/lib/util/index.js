@@ -16,3 +16,8 @@ export default function getTimeRemaining(deadline) {
     seconds,
   };
 }
+
+
+export default function randomChoice(items){
+  items[Math.floor(Math.random() * items.length)]
+}
