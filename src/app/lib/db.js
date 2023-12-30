@@ -846,7 +846,7 @@ export const data = {
         media: 'image',
         src: [
           '/exhibition/zeinab_nikcheh/01.jpg',
-          '/exhibition/zeinab_nikcheh/01.jpg',
+          '/exhibition/zeinab_nikcheh/02.jpg',
         ],
         title_eng: ``,
         title_fa: '',
