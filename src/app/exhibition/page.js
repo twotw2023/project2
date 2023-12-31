@@ -1,18 +1,15 @@
 'use client';
 import { body } from '../fonts';
-import { useEffect, useState } from 'react';
-import ArtworksList from '../components/ArtworksList';
-import { data } from '../lib/db';
+
 import './page.css';
-import Gallery from '../components/exhibition/Gallery';
 import AcalypcaCard from '../components/exhibition/acalypcaCard';
 import AnonymousGroupCard from '../components/exhibition/anonymousGroupCard';
 
-const page = (props) => {
+const page = () => {
   return (
     <section className='exhibit-container'>
       {/* <h1>Online Exhibition</h1> */}
-      <p className={`${body.variable} exhibit__desc`}>
+      <p className={`${body.variable} exhibit__desc `}>
         Through an Open Call on social media, we have gathered works from 13
         artists, whose diverse perspectives and artistic expressions create a
         varied exhibition. Each artist, using unique tools from brushstrokes to
