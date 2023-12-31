@@ -9,9 +9,11 @@ import './page.css';
 const page = () => {
   const artistData = data[7];
   const artworks = artistData.artworks;
-  const images = Array.from(artworks[0].src, (artwork) => ({
-    src: artwork,
+  const images = Array.from(artworks[0].urls, (artwork) => ({
+    src: artwork.src,
     alt: artistData.artist + '/' + artworks[0].title_eng,
+    width: '400',
+    height: '300',
   }));
 
   useEffect(() => {
@@ -55,6 +57,7 @@ const page = () => {
                 data-lightboxjs='lightbox1'
                 quality={80}
                 imgcaption={image.title}
+                key={image.src}
               />
             </div>
           ))}

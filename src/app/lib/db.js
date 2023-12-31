@@ -861,6 +861,10 @@ export const data = {
         id: 'zeinab01',
         media: 'image',
         src: [
+          '/exhibition/zeinab_nikcheh/01.jpg',
+          '/exhibition/zeinab_nikcheh/02.jpg',
+        ],
+        urls: [
           { src: '/exhibition/zeinab_nikcheh/01.jpg', key: 1 },
           { src: '/exhibition/zeinab_nikcheh/02.jpg', key: 2 },
         ],

@@ -10,7 +10,7 @@ const page = () => {
   const artistData = data[6];
   const artworks = artistData.artworks;
   // const images = artworks[0].src;
-  const images = Array.from(artworks[0].src, (artwork) => ({
+  const images = Array.from(artworks[0].urls, (artwork) => ({
     src: artwork.src,
     alt: artistData.artist + '/' + artworks[0].title_eng,
     key: artwork.key,
@@ -54,8 +54,6 @@ const page = () => {
               <Image
                 src={image.src}
                 alt={image.alt}
-                height={200}
-                width={200}
                 data-lightboxjs='lightbox1'
                 quality={80}
                 imgcaption={artworks.title_eng}
