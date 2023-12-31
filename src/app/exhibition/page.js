@@ -3,7 +3,7 @@ import { body } from '../fonts';
 
 import './page.css';
 import AcalypcaCard from '../components/exhibition/acalypcaCard';
-import AnonymousGroupCard from '../components/exhibition/anonymousGroupCard';
+import AnonymousGroupCard from '../components/exhibition/AnonymousGroupCard';
 
 const page = () => {
   return (
