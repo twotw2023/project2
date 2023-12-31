@@ -19,7 +19,7 @@ import Image from 'next/image';
 const AfsanehCard1 = () => {
   const artistData = data[4];
   const artworks = artistData.artworks[0];
-  const artworkLinks = artworks.src;
+  const artworkLinks = artworks.urls;
 
   return (
     <div className='flex flex-col items-center justify-center'>

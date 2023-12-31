@@ -18,7 +18,7 @@ import Image from 'next/image';
 const SahelCard = () => {
   const artistData = data[8];
   const artworks = artistData.artworks[0];
-  const artworkLinks = artworks.src;
+  const artworkLinks = artworks.urls;
 
   return (
     <div className='flex flex-col items-center justify-center'>
