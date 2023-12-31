@@ -22,8 +22,8 @@ main {
   width: 100%;
 }
 .app__bottom {
-  height: 100vh;
-  width: auto;
+  height: auto;
+  width: 100vw;
   /* position: absolute;
   top: 0;
   z-index: -1; */

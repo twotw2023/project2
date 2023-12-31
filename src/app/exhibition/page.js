@@ -4,6 +4,19 @@ import { body } from '../fonts';
 import './page.css';
 import AcalypcaCard from '../components/exhibition/acalypcaCard';
 import AnonymousGroupCard from '../components/exhibition/AnonymousGroupCard';
+import IceFlowerCard from '../components/exhibition/IceFlowerCard';
+import AhooraCard from '../components/exhibition/AhooraCard';
+import {
+  AfsanehCard1,
+  AfsanehCard2,
+} from '../components/exhibition/AfsanehCard1';
+import AnonymousCard from '../components/exhibition/AnonymousCard';
+import SamanehCard from '../components/exhibition/SamanehCard';
+import ZeinabCard from '../components/exhibition/ZeinabCard';
+import SahelCard from '../components/exhibition/SahelCard';
+import SoheilaCard from '../components/exhibition/SoheilaCard.js';
+import ShabnamCard from '../components/exhibition/ShabnamCard';
+import NasserCard from '../components/exhibition/NasserCard';
 
 const page = () => {
   return (
@@ -36,9 +49,21 @@ const page = () => {
         frameborder='0'
         allowfullscreen
       ></iframe> */}
-      <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-4'>
+      {/* <div className='container grid grid-cols-2 md:grid-cols-3 gap-4'> */}
+      <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
         <AcalypcaCard />
         <AnonymousGroupCard />
+        <IceFlowerCard />
+        <ShabnamCard />
+        <AhooraCard />
+        <SamanehCard />
+        <AfsanehCard1 />
+        <AfsanehCard2 />
+        <AnonymousCard />
+        <NasserCard />
+        <ZeinabCard />
+        <SahelCard />
+        <SoheilaCard />
       </div>
 
       {/* <Gallery /> */}

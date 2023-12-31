@@ -11,8 +11,11 @@ const page = () => {
   const artworks = artistData.artworks;
   // const images = artworks[0].src;
   const images = Array.from(artworks[0].src, (artwork) => ({
-    src: artwork,
+    src: artwork.src,
     alt: artistData.artist + '/' + artworks[0].title_eng,
+    key: artwork.key,
+    width: '300',
+    height: '400',
   }));
 
   useEffect(() => {
@@ -46,7 +49,7 @@ const page = () => {
           {images.map((image) => (
             <div
               className='flex flex-col max-w-45 items-center justify-center'
-              key={image.title}
+              key={image.key}
             >
               <Image
                 src={image.src}
@@ -55,7 +58,7 @@ const page = () => {
                 width={200}
                 data-lightboxjs='lightbox1'
                 quality={80}
-                imgcaption={image.title}
+                imgcaption={artworks.title_eng}
               />
             </div>
           ))}

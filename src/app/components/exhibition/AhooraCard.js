@@ -15,20 +15,22 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { data } from '@/app/lib/db';
 import Link from 'next/link';
 
-const AnonymousGroupCard = () => {
-  const artistData = data[1];
+const AhooraCard = () => {
+  const artistData = data[3];
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center w-auto'>
-      <iframe
-        src='https://player.vimeo.com/video/898787939?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-        allow='autoplay; fullscreen; picture-in-picture'
-        title="font-family: 'Familjen Grotesk', sans-serif;"
-        // width={300}
-        // height={400}
-        className='w-80 h-80'
-      ></iframe>
-      <script src='https://player.vimeo.com/api/player.js'></script>
+      <video
+        playsInline
+        width={300}
+        height={300}
+        poster={artistData.image}
+        controls
+        className='mr-auto ml-auto mt-4 mb-10'
+      >
+        <source src={artworks[0].src} type='audio/mp3' />
+        Your browser does not support the audio tag.
+      </video>
 
       <p className='artist acalypca'>
         <strong>Artist:&nbsp;&nbsp;</strong>
@@ -38,11 +40,11 @@ const AnonymousGroupCard = () => {
         <strong>Title:&nbsp;&nbsp;</strong>
         {artworks[0].title_eng}
       </h3>
-      <Link className='button' href='/exhibition/anonymous-photographers'>
+      <Link className='button' href='/exhibition/ahoora'>
         learn more
       </Link>
     </div>
   );
 };
 
-export default AnonymousGroupCard;
+export default AhooraCard;

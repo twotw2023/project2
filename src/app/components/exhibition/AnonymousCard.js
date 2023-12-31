@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './acalypcaCard.css';
+import './IceFlowerCard.css';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,9 +14,10 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import { data } from '@/app/lib/db';
 import Link from 'next/link';
+import Image from 'next/image';
 
-const AcalypcaCard = () => {
-  const artistData = data[0];
+const AnonymousCard = () => {
+  const artistData = data[5];
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center'>
@@ -29,18 +30,20 @@ const AcalypcaCard = () => {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className='mySwiper'
         lazyPreloadPrevNext={2}
-        style={{ height: '70%' }}
         loop
+        style={{ width: '70%', height: '85%' }}
       >
         {artworks.map((artwork) => (
           <SwiperSlide
-            key={artwork.id}
             className='flex flex-col bg-transparent'
+            key={artwork.id}
           >
-            <video playsInline width={400} height={400} lazy='true' controls>
-              <source src={artwork.src} type='video/mp4' />
-              Your browser does not support the video tag.
-            </video>
+            <Image
+              src={artwork.src}
+              alt={artistData.artist + '/' + artwork.title_eng}
+              width={250}
+              height={400}
+            />
             <p className='artist acalypca'>
               <strong>Artist:&nbsp;&nbsp;</strong>
               {artistData.artist}
@@ -52,19 +55,11 @@ const AcalypcaCard = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <p className='artist acalypca'>
-        <strong>Artist:&nbsp;&nbsp;</strong>
-        {artistData.artist}
-      </p> */}
-      {/* <h3 className='title'>
-        <strong>Title:&nbsp;&nbsp;</strong>
-        {artworks[1].title_eng}
-      </h3> */}
-      <Link className='button' href='/exhibition/acalypca'>
+      <Link className='button' href='/exhibition/anonymous'>
         learn more
       </Link>
     </div>
   );
 };
 
-export default AcalypcaCard;
+export default AnonymousCard;
