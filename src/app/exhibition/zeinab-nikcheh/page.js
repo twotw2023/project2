@@ -21,14 +21,14 @@ const page = () => {
   });
   return (
     <div>
-      <Link href='/exhibition'>
+      {/* <Link href='/exhibition'>
         <Image
           src='/arrow/arrow--red.png'
           width={300}
           height={300}
           alt='go back'
         />
-      </Link>
+      </Link> */}
       <h2 className='artist'>{artistData.artist}</h2>
       <h3 className='title'>
         <strong>Title:&nbsp;&nbsp;</strong>
