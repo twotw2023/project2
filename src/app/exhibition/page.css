@@ -25,4 +25,52 @@ h1 {
   line-height: 1.9rem;
   font-size: 1.1rem;
   color: #2b2b2b;
+  margin-top: 3rem;
+  text-align: justify;
+}
+.heading {
+  padding-left: 10vw;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.greenWave {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 3rem;
+  }
+  .frameImages {
+    display: none;
+  }
+  .greenWave {
+    display: block;
+  }
+  .title-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .exhibit__desc {
+    padding: 2rem 3rem;
+    line-height: 1.9rem;
+    font-size: 0.9rem;
+  }
+  .greenWave {
+    width: 35%;
+  }
+  .heading {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
 }

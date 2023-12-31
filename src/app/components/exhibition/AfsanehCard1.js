@@ -31,7 +31,7 @@ const AfsanehCard1 = () => {
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         style={{ width: '70%', height: '70%' }}
-        className='mySwiper'
+        className='mySwiper-afsaneh'
         lazyPreloadPrevNext={2}
         loop
       >

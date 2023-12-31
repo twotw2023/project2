@@ -72,3 +72,22 @@ main {
 .button:hover {
   border-bottom: #990101 solid 4px;
 }
+
+@media only screen and (max-width: 768px) {
+  .titleCard {
+    font-size: 1.5rem;
+  }
+  .artist.acalypta {
+    font-size: 1.5rem;
+  }
+  .button {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .titleCard,
+  .artist.acalypta,
+  .button {
+    font-size: 1.3rem;
+  }
+}

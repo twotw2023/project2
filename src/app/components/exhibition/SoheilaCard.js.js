@@ -21,6 +21,7 @@ const SoheilaCard = () => {
   return (
     <div className='flex flex-col items-center justify-center w-auto'>
       <iframe
+        className='Soheila-video'
         width='450'
         height='350'
         title="font-family: 'Familjen Grotesk', sans-serif;"

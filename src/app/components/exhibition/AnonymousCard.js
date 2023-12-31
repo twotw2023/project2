@@ -28,7 +28,7 @@ const AnonymousCard = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className='mySwiper'
+        className='mySwiper-anonymous'
         lazyPreloadPrevNext={2}
         loop
         style={{ width: '70%', height: '85%' }}

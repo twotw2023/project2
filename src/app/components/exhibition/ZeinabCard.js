@@ -18,7 +18,7 @@ import Image from 'next/image';
 const ZeinabCard = () => {
   const artistData = data[7];
   const artworks = artistData.artworks[0];
-  const artworkLinks = artworks.src;
+  const artworkLinks = artworks.urls;
 
   return (
     <div className='flex flex-col items-center justify-center'>
@@ -29,10 +29,9 @@ const ZeinabCard = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className='mySwiper'
+        className='mySwiper-zeinab'
         lazyPreloadPrevNext={2}
         loop
-        style={{ width: '100%', height: '50%' }}
       >
         {artworkLinks.map((artwork) => (
           <SwiperSlide

@@ -29,7 +29,6 @@ const AcalypcaCard = () => {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className='mySwiper'
         lazyPreloadPrevNext={2}
-        style={{ height: '70%' }}
         loop
       >
         {artworks.map((artwork) => (

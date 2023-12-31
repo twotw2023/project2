@@ -42,7 +42,8 @@ const SamanehCard = () => {
               src={artwork.src}
               alt={artistData.artist + '/' + artwork.title_eng}
               className='swiper__image'
-              fill
+              width={300}
+              height={400}
             />
           </SwiperSlide>
         ))}

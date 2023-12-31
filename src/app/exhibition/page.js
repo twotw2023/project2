@@ -17,11 +17,12 @@ import SahelCard from '../components/exhibition/SahelCard';
 import SoheilaCard from '../components/exhibition/SoheilaCard.js';
 import ShabnamCard from '../components/exhibition/ShabnamCard';
 import NasserCard from '../components/exhibition/NasserCard';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const page = () => {
   return (
     <section className='exhibit-container'>
-      {/* <h1>Online Exhibition</h1> */}
       <p className={`${body.variable} exhibit__desc `}>
         Through an Open Call on social media, we have gathered works from 13
         artists, whose diverse perspectives and artistic expressions create a
@@ -41,6 +42,25 @@ const page = () => {
         Freedom movement in Iran. Each piece constitutes a subtle but
         significant part of this shared narrative
       </p>
+      <div className='title-container'>
+        <Image
+          // className='float-left hidden mt-5 h-2 md:block md:w-auto md:h-40 lg:block lg:h-20'
+          className='frameImages'
+          src='/arrow/frames.png'
+          alt='frames'
+          width={300}
+          height={300}
+        />
+
+        <Image
+          className='greenWave'
+          src='/arrow/wave--green.png'
+          alt='green wave'
+          width={300}
+          height={300}
+        />
+        <h2 className='artist heading'>Selected Works</h2>
+      </div>
 
       {/* <iframe
         width='560'
@@ -54,13 +74,13 @@ const page = () => {
         <AcalypcaCard />
         <AnonymousGroupCard />
         <IceFlowerCard />
+        <NasserCard />
         <ShabnamCard />
         <AhooraCard />
         <SamanehCard />
         <AfsanehCard1 />
         <AfsanehCard2 />
         <AnonymousCard />
-        <NasserCard />
         <ZeinabCard />
         <SahelCard />
         <SoheilaCard />

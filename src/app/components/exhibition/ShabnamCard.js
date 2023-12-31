@@ -28,10 +28,9 @@ const ShabnamCard = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className='mySwiper'
+        className='mySwiper-shabnamFaraee'
         lazyPreloadPrevNext={2}
         loop
-        style={{ width: '70%', height: '83%' }}
       >
         {artworks.map((artwork) => (
           <SwiperSlide
