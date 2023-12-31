@@ -19,12 +19,14 @@ const AnonymousGroupCard = () => {
   const artistData = data[1];
   const artworks = artistData.artworks;
   return (
-    <div className='flex flex-col items-center justify-center w-1/3'>
+    <div className='flex flex-col items-center justify-center w-auto'>
       <iframe
         src='https://player.vimeo.com/video/898787939?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
         allow='autoplay; fullscreen; picture-in-picture'
         title="font-family: 'Familjen Grotesk', sans-serif;"
-        className='w-40'
+        // width={300}
+        // height={400}
+        className='w-80 h-80'
       ></iframe>
       <script src='https://player.vimeo.com/api/player.js'></script>
 
