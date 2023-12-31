@@ -5,13 +5,10 @@ import ArtworksList from '../components/ArtworksList';
 import { data } from '../lib/db';
 import './page.css';
 import Gallery from '../components/exhibition/Gallery';
+import AcalypcaCard from '../components/exhibition/acalypcaCard';
+import AnonymousGroupCard from '../components/exhibition/anonymousGroupCard';
 
 const page = (props) => {
-  // const [data, setData] = useState(null);
-  // const [isLoading, setLoading] = useState(true);
-
-  // if (isLoading) return <p>Loading...</p>;
-  // if (!data) return <p>No profile data</p>;
   return (
     <section className='exhibit-container'>
       {/* <h1>Online Exhibition</h1> */}
@@ -35,7 +32,19 @@ const page = (props) => {
         significant part of this shared narrative
       </p>
 
-      <Gallery />
+      {/* <iframe
+        width='560'
+        height='315'
+        src='https://www.artsteps.com/embed/6590b92942e13c54491b636e/560/315'
+        frameborder='0'
+        allowfullscreen
+      ></iframe> */}
+      <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-4'>
+        <AcalypcaCard />
+        <AnonymousGroupCard />
+      </div>
+
+      {/* <Gallery /> */}
     </section>
   );
 };
