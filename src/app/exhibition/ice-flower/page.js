@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 import { data } from '@/app/lib/db';
 import './ice-flower.css';
-import Gallery from '@/app/components/exhibition/Gallery';
 
 const page = () => {
   const artistData = data[2];
