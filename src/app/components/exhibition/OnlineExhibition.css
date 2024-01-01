@@ -24,5 +24,6 @@
   }
   .exhibition-sd {
     display: block;
+    width: 80vw;
   }
 }

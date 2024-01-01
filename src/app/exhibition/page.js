@@ -87,14 +87,14 @@ const page = () => {
         <ShabnamCard />
         <AhooraCard />
         <SamanehCard />
-        <AfsanehCard1 />
+        <AfsanehCard2 />
         <MandakCard />
 
         <AnonymousCard />
         <ZeinabCard />
         <SahelCard />
+        <AfsanehCard1 />
 
-        <AfsanehCard2 />
         <SoheilaCard />
       </div>
     </section>
