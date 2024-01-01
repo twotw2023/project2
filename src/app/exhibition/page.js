@@ -20,6 +20,7 @@ import NasserCard from '../components/exhibition/NasserCard';
 import Image from 'next/image';
 import Link from 'next/link';
 import OnlineExhibition from '../components/exhibition/OnlineExhibition';
+import MandakCard from '../components/exhibition/MandakCard';
 
 const page = () => {
   return (
@@ -86,6 +87,7 @@ const page = () => {
         <AhooraCard />
         <SamanehCard />
         <AfsanehCard1 />
+        <MandakCard />
         <AfsanehCard2 />
         <AnonymousCard />
         <ZeinabCard />

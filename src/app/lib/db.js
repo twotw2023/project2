@@ -1178,21 +1178,26 @@ export const data = {
         id: 'mandak09',
         media: 'image',
         src: '/exhibition/mandak/10.jpeg',
-        title_eng: `My name is  Mandak, born in Kurdistan, Iran. I grew up in a culture of resistance against global oppression, and I witnessed injustice in all its forms from my childhood. The first time I was arrested was during a protest in the city of Bukan when I was thirteen years old. We were more than fifteen children. They beat us, made us sign papers, and released us. It was my first commitment, and until my escape, they took commitments from me dozens of times. I have lived and worked in many areas of Kurdistan in Iran and Iraq, as well as many other regions in Iran. I am an artist, and art is both my language and my weapon, my profession, and my reason for being. Making historical models and retelling history without censorship and artistic protests were the reasons for not tolerating the situation there.
-        Now, for several years, I have been in the Netherlands, and my art, profession, language, and weapon are still integral parts of my life. In the hope of human and environmental freedom from the grip of global oppression and in the hope of equality in all its forms for all humans on this earthly sphere.
+        title_eng: `
         `,
         title_fa: '',
         statement: ``,
       },
     ],
-    bio: `Nasser Teymourpour, Born 1980 - Ilam, Iran.
-    Naser Teymourpour is a multimedia artist based in London. He has exhibited his works 
-    in four solo exhibitions and over twenty-five group exhibitions.
-    His works generally have social and political themes with a critical approach.
-    His works have been showcased in the first and second exhibitions of conceptual art 
-    at the Museum of Contemporary Arts in Tehran.
-    Nasser is one of the artists who is going to showcase their works in "The Writings on 
-    the Walls" online art exhibition.
+    bio: `My name is  Mandak, born in Kurdistan, Iran. I grew up in a culture of resistance
+     against global oppression, and I witnessed injustice in all its forms from my childhood.
+      The first time I was arrested was during a protest in the city of Bukan when I was
+       thirteen years old. We were more than fifteen children. They beat us, made us sign
+        papers, and released us. It was my first commitment, and until my escape, they
+         took commitments from me dozens of times. I have lived and worked in many areas
+          of Kurdistan in Iran and Iraq, as well as many other regions in Iran. I am an
+           artist, and art is both my language and my weapon, my profession, and my reason
+            for being. Making historical models and retelling history without censorship
+             and artistic protests were the reasons for not tolerating the situation there.
+    Now, for several years, I have been in the Netherlands, and my art, profession, language,
+     and weapon are still integral parts of my life. In the hope of human and environmental
+      freedom from the grip of global oppression and in the hope of equality in all its forms
+       for all humans on this earthly sphere.
     
     `,
   },
