@@ -61,6 +61,10 @@
 .swiper-button-next {
   color: #990101;
 }
+.mySwiper-anonymous {
+  width: 70%;
+  height: 58%;
+}
 
 @media only screen and (max-width: 768px) {
   .mySwiper-shabnamFaraee {
