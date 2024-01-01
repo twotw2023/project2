@@ -43,6 +43,7 @@ const ZeinabCard = () => {
               alt={artistData.artist + '/' + artwork.title_eng}
               width={400}
               height={300}
+              loading='lazy'
             />
           </SwiperSlide>
         ))}

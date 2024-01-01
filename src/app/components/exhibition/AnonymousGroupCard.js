@@ -27,6 +27,7 @@ const AnonymousGroupCard = () => {
         // width={300}
         // height={400}
         className='w-80 h-80'
+        loading='lazy'
       ></iframe>
       <script src='https://player.vimeo.com/api/player.js'></script>
 

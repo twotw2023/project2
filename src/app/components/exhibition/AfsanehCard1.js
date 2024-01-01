@@ -45,6 +45,7 @@ const AfsanehCard1 = () => {
               alt={artistData.artist + '/' + artwork.title_eng}
               width={250}
               height={400}
+              loading='lazy'
             />
             {/* <p className='artist acalypca'>
               <strong>Artist:&nbsp;&nbsp;</strong>
@@ -78,6 +79,8 @@ const AfsanehCard2 = () => {
   return (
     <div className='flex flex-col items-center justify-center w-auto'>
       <video
+        autoPlay
+        muted
         playsInline
         width={300}
         height={300}
@@ -85,7 +88,7 @@ const AfsanehCard2 = () => {
         controls
         className='mr-auto ml-auto mt-4 mb-10'
       >
-        <source src={artworks[1].src} type='audio/mp3' />
+        <source src={artworks[1].src[0]} type='video/mp4' />
         Your browser does not support the audio tag.
       </video>
 

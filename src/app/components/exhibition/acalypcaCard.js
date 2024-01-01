@@ -40,13 +40,7 @@ const AcalypcaCard = () => {
               src={artwork.src}
               frameborder='0'
               allow='autoplay; fullscreen; picture-in-picture'
-              // style={{
-              //   position: 'absolute',
-              //   top: 0,
-              //   left: 0,
-              //   width: '100%',
-              //   height: '100%',
-              // }}
+              loading='lazy'
               className='vimeo'
               title='01'
             ></iframe>

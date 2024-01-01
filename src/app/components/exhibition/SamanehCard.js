@@ -44,6 +44,7 @@ const SamanehCard = () => {
               className='swiper__image'
               width={300}
               height={400}
+              loading='lazy'
             />
           </SwiperSlide>
         ))}

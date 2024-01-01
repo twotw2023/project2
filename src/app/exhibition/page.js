@@ -1,5 +1,9 @@
 'use client';
+
+import dynamic from 'next/dynamic';
+
 import { body } from '../fonts';
+// anonymous_group: dynamic(() => import('./AnonymousGroupCard'))
 
 import './page.css';
 import AcalypcaCard from '../components/exhibition/acalypcaCard';
@@ -57,6 +61,7 @@ const page = () => {
         gallery below. To view the complete works of each artist, including
         those in video format, please visit the ‘Selected Works’ section.{' '}
       </p>
+      <p>It's recommended to view the exhibition in fullscreen.</p>
       <OnlineExhibition />
 
       <div className='title-container'>

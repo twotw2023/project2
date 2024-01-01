@@ -43,6 +43,7 @@ const ShabnamCard = () => {
                 alt={artistData.artist + '/' + artwork.title_eng}
                 width={250}
                 height={400}
+                loading='lazy'
               />
               <p className='artist acalypca'>
                 <strong>Artist:&nbsp;&nbsp;</strong>
