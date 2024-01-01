@@ -36,10 +36,21 @@ const AcalypcaCard = () => {
             key={artwork.id}
             className='flex flex-col bg-transparent'
           >
-            <video playsInline width={400} height={400} lazy='true' controls>
-              <source src={artwork.src} type='video/mp4' />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              src={artwork.src}
+              frameborder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              // style={{
+              //   position: 'absolute',
+              //   top: 0,
+              //   left: 0,
+              //   width: '100%',
+              //   height: '100%',
+              // }}
+              className='vimeo'
+              title='01'
+            ></iframe>
+            <script src='https://player.vimeo.com/api/player.js'></script>
             <p className='artist acalypca'>
               <strong>Artist:&nbsp;&nbsp;</strong>
               {artistData.artist}

@@ -17,24 +17,23 @@ const page = () => {
       <p className='artist-bio'>{artistData.bio}</p>
       <div className='container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-4 mr-auto ml-auto'>
         {artworks.map((artwork) => (
-          <video
-            onMouseEnter={(events) => {
-              events.target.play();
-            }}
-            onMouseOut={(events) => {
-              events.target.pause();
-            }}
-            playsInline
-            width={400}
-            height={400}
-            key={artwork.id}
-            lazy='true'
-            ref={videoRef}
-            controls
-          >
-            <source src={artwork.src} type='video/mp4' />
-            Your browser does not support the video tag.
-          </video>
+          <>
+            <iframe
+              src={artwork.src}
+              frameborder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              // style={{
+              //   position: 'absolute',
+              //   top: 0,
+              //   left: 0,
+              //   width: '100%',
+              //   height: '100%',
+              // }}
+              className='vimeo'
+              title='01'
+            ></iframe>
+            <script src='https://player.vimeo.com/api/player.js'></script>
+          </>
         ))}
       </div>
     </div>

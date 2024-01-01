@@ -4,16 +4,16 @@
 .artist {
   font-family: 'gunplay', sans-serif;
   margin-top: 8rem;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 400;
   color: #2b2b2b;
   padding-left: 6rem;
 }
 
-.title {
+.title.artworkPage {
   font-family: 'Familjen Grotesk', sans-serif;
   padding-left: 6rem;
-  font-size: 2vw;
+  font-size: 2rem;
   font-weight: 400;
   color: #2b2b2b;
 }
@@ -24,4 +24,69 @@
   font-size: 1.1rem;
   color: #2b2b2b;
   font-family: 'Familjen Grotesk', sans-serif;
+}
+.artist-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.backLink {
+  width: 10rem;
+  padding-right: 4rem;
+  padding-top: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .title.artworkPage {
+    padding-left: 6rem;
+    font-size: 1.4rem;
+    display: block;
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+
+  .artist {
+    margin-top: 7rem;
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+
+  .artist-bio {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+  .backLink {
+    width: 8rem;
+    padding-right: 3rem;
+    padding-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .artist-link-container {
+    justify-content: space-between;
+  }
+  .artist {
+    margin-top: 7rem;
+    font-size: 1.5rem;
+    padding-left: 4rem;
+  }
+  .title.artworkPage {
+    padding-top: 1rem;
+    padding-left: 4rem;
+    font-size: 1rem;
+  }
+  .artist-bio {
+    padding: 0.5rem 4rem;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+  }
+  .backLink {
+    width: 6rem;
+    height: auto;
+    padding-right: 2rem;
+    padding-top: 7rem;
+  }
 }

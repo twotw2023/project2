@@ -5,6 +5,7 @@ import { SlideshowLightbox, initLightboxJS } from 'lightbox.js-react';
 import { Image } from 'lightbox.js-react';
 import { data } from '@/app/lib/db';
 import './page.css';
+import Link from 'next/link';
 
 const page = () => {
   const artistData = data[10];
@@ -19,8 +20,20 @@ const page = () => {
   });
   return (
     <div>
-      <h2 className='artist'>{artistData.artist}</h2>
-      <h3 className='title'>
+      <div className='artist-link-container'>
+        <div>
+          <h2 className='artist'>{artistData.artist}</h2>
+        </div>
+        <Link href='/exhibition' className='backLink'>
+          <img
+            src='/arrow/arrow--red.png'
+            width={300}
+            height={300}
+            alt='go back'
+          />
+        </Link>
+      </div>
+      <h3 className='title artworkPage'>
         <strong>Title:&nbsp;&nbsp;</strong>
         {artworks[0].title_eng}
       </h3>
@@ -28,10 +41,10 @@ const page = () => {
         <strong>Statement:&nbsp;&nbsp;</strong>
         {artworks[0].statement}
       </p>
-      <div className='mt-10 mr-auto ml-auto mb-10 w-1/4'>
+      <div className='image-container'>
         <Image image={{ src: artworks[0].src, title: artworks[0].title_eng }} />
       </div>
-      <h3 className='title'>
+      <h3 className='title artworkPage'>
         <strong>Title:&nbsp;&nbsp;</strong>
         {artworks[1].title_eng}
       </h3>
@@ -40,7 +53,7 @@ const page = () => {
         {artworks[1].statement}
       </p>
 
-      <div className='mt-10 mr-auto ml-auto mb-10 w-1/4'>
+      <div className='image-container'>
         <Image image={{ src: artworks[1].src, title: artworks[1].title_eng }} />
       </div>
     </div>

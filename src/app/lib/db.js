@@ -6,7 +6,7 @@ export const data = {
       {
         id: 'acalypca01',
         media: 'video',
-        src: '/exhibition/acalypca/01.mp4',
+        src: 'https://player.vimeo.com/video/898946452?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Where do the balloons go?',
         title_fa: 'بادکنک‌ها کجا می‌روند؟',
         statement: '',
@@ -14,7 +14,7 @@ export const data = {
       {
         id: 'acalypca02',
         media: 'video',
-        src: '/exhibition/acalypca/02.mp4',
+        src: 'https://player.vimeo.com/video/898946538?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Execution Pendulum',
         title_fa: 'آونگ اعدام',
         statement: '',
@@ -22,7 +22,7 @@ export const data = {
       {
         id: 'acalypca03',
         media: 'video',
-        src: '/exhibition/acalypca/03.mp4',
+        src: 'https://player.vimeo.com/video/898946602?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Their Rescue Rope',
         title_fa: 'طناب نجات‌شان',
         statement: '',
@@ -30,7 +30,7 @@ export const data = {
       {
         id: 'acalypca04',
         media: 'video',
-        src: '/exhibition/acalypca/04.mp4',
+        src: 'https://player.vimeo.com/video/898946615?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Nika Shakarami',
         title_fa: 'نیکا شاکرمی',
         statement: '',
@@ -38,15 +38,15 @@ export const data = {
       {
         id: 'acalypca05',
         media: 'video',
-        src: '/exhibition/acalypca/05.mp4',
+        src: 'https://player.vimeo.com/video/898946635?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Murder Patrol',
-        title_eng: 'گشت کشتار',
+        title_fa: 'گشت کشتار',
         statement: '',
       },
       {
         id: 'acalypca06',
         media: 'video',
-        src: '/exhibition/acalypca/06.mp4',
+        src: 'https://player.vimeo.com/video/898946692?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Musical Instrument of Regime',
         title_fa: 'ساز موسیقی رژیم',
         statement: '',
@@ -54,7 +54,7 @@ export const data = {
       {
         id: 'acalypca07',
         media: 'video',
-        src: '/exhibition/acalypca/07.mp4',
+        src: 'https://player.vimeo.com/video/898946732?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Panegyrists of Regime',
         title_fa: 'مداحان رژیم',
         statement: '',
@@ -62,7 +62,7 @@ export const data = {
       {
         id: 'acalypca08',
         media: 'video',
-        src: '/exhibition/acalypca/08.mp4',
+        src: 'https://player.vimeo.com/video/898946770?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Self Flagellation of Regime',
         title_fa: 'زنجیرزنی نظام',
         statement: '',
@@ -70,7 +70,7 @@ export const data = {
       {
         id: 'acalypca09',
         media: 'video',
-        src: '/exhibition/acalypca/09.mp4',
+        src: 'https://player.vimeo.com/video/898946807?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
         title_eng: 'Boat of Regime',
         title_fa: 'قایق نظام',
         statement: '',

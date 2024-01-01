@@ -5,6 +5,7 @@ import { SlideshowLightbox, initLightboxJS } from 'lightbox.js-react';
 import Image from 'next/image';
 import { data } from '@/app/lib/db';
 import './page.css';
+import Link from 'next/link';
 
 const page = () => {
   const artistData = data[6];
@@ -23,13 +24,27 @@ const page = () => {
   });
   return (
     <div>
-      <h2 className='artist'>{artistData.artist}</h2>
-      <h3 className='title'>
+      <div className='artist-link-container'>
+        <div>
+          <h2 className='artist'>{artistData.artist}</h2>
+        </div>
+        <Link href='/exhibition' className='backLink'>
+          <Image
+            src='/arrow/arrow--red.png'
+            width={300}
+            height={300}
+            alt='go back'
+          />
+        </Link>
+      </div>
+      <h3 className='title artworkPage'>
         <strong>Title:&nbsp;&nbsp;</strong>
+        <br />
         {artworks[0].title_eng}
       </h3>
       <p className='artist-bio'>
         <strong>Statement:&nbsp;&nbsp;</strong>
+        <br />
         {artworks[0].statement}
       </p>
       <div className='mt-10 flex justify-center mb-10'>
@@ -57,6 +72,8 @@ const page = () => {
                 data-lightboxjs='lightbox1'
                 quality={80}
                 imgcaption={artworks.title_eng}
+                width={300}
+                height={400}
               />
             </div>
           ))}
