@@ -1,0 +1,28 @@
+.exhibition-container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.exhibition-md,
+.exhibition-sd {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .exhibition-lg,
+  .exhibition-sd {
+    display: none;
+  }
+  .exhibition-md {
+    display: block;
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .exhibition-lg,
+  .exhibition-md {
+    display: none;
+  }
+  .exhibition-sd {
+    display: block;
+  }
+}

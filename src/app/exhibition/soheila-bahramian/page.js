@@ -1,12 +1,25 @@
 import { data } from '@/app/lib/db';
 import './page.css';
+import Link from 'next/link';
 
 const page = () => {
   const artistData = data[9];
   const artworks = artistData.artworks;
   return (
     <div>
-      <h2 className='artist'>{artistData.artist}</h2>
+      <div className='artist-link-container'>
+        <div>
+          <h2 className='artist'>{artistData.artist}</h2>
+        </div>
+        <Link href='/exhibition' className='backLink'>
+          <img
+            src='/arrow/arrow--red.png'
+            width={300}
+            height={300}
+            alt='go back'
+          />
+        </Link>
+      </div>
       <h3 className='title'>{artworks[0].title_eng}</h3>
       <p className='artist-bio'>{artworks[0].statement}</p>
       <div className='mt-10 mb-20 mr-auto ml-auto'>
@@ -15,9 +28,9 @@ const page = () => {
           height='405'
           title="font-family: 'Familjen Grotesk', sans-serif;"
           src='https://www.youtube.com/embed/9PTDi7rvv2k?si=cabzev2I9yvMlcHX&rel=0'
-          frameborder='0'
+          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          allowfullscreen
+          allowFullScreen
           className='ml-auto mr-auto'
         ></iframe>
       </div>

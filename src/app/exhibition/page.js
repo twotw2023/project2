@@ -19,6 +19,7 @@ import ShabnamCard from '../components/exhibition/ShabnamCard';
 import NasserCard from '../components/exhibition/NasserCard';
 import Image from 'next/image';
 import Link from 'next/link';
+import OnlineExhibition from '../components/exhibition/OnlineExhibition';
 
 const page = () => {
   return (
@@ -28,20 +29,34 @@ const page = () => {
         artists, whose diverse perspectives and artistic expressions create a
         varied exhibition. Each artist, using unique tools from brushstrokes to
         pixels, explores themes of oppression, the struggle for freedom, hope,
-        and fear. In the light of the fight against dictatorship in Iran and the
-        vital movement for Women's Life Freedom, this digital art exhibition has
-        come to life. Here, the artworks reflect on the diverse experiences and
+        and fear. <br />
+        In the light of the fight against dictatorship in Iran and the vital
+        movement for Women's Life Freedom, this digital art exhibition has come
+        to life. Here, the artworks reflect on the diverse experiences and
         challenges of humanity. Each artist's choice of expression becomes an
         individual voice, a piece of a collective story shaped in different
-        ways. Curator Azad Larki has intricately connected these diverse works
-        to form a narrative palette. "The Writings on the Wall" is an invitation
-        to explore the various stories that adorn the walls of our digital art
-        hall. The artworks are the result of different perspectives and art
-        forms, yet they come together in their commitment to illuminate the
-        ongoing struggle for freedom and human rights through the Women's Life
-        Freedom movement in Iran. Each piece constitutes a subtle but
-        significant part of this shared narrative
+        ways. Curators Azad Larki & anonymous artist, have intricately connected
+        these diverse works to form a narrative palette. <br />
+        "The Writings on the Wall" is an invitation to explore the various
+        stories that adorn the walls of our digital art hall. The artworks are
+        the result of different perspectives and art forms, yet they come
+        together in their commitment to illuminate the ongoing struggle for
+        freedom and human rights through the Women's Life Freedom movement in
+        Iran. Each piece constitutes a subtle but significant part of this
+        shared narrative.
+        <br />
+        <strong>Artists:</strong> Acalypca, Afsaneh Salim Bayati, Ahoora, Ice
+        Flower, Mandak, Nasser TeymourPour, Sahel Samavati, Samaneh Roghani,
+        Shabnam Faraee, Soheila Bahramian, Zeinab Nikcheh & anonymous artists.
       </p>
+      <h2 className='header'>Virtual Exhibition</h2>
+      <p className={`${body.variable} exhibit__desc `}>
+        Delve into a selection of works from the exhibition in the virtual
+        gallery below. To view the complete works of each artist, including
+        those in video format, please visit the ‘Selected Works’ section.{' '}
+      </p>
+      <OnlineExhibition />
+
       <div className='title-container'>
         <Image
           // className='float-left hidden mt-5 h-2 md:block md:w-auto md:h-40 lg:block lg:h-20'
@@ -59,17 +74,9 @@ const page = () => {
           width={300}
           height={300}
         />
+
         <h2 className='artist heading'>Selected Works</h2>
       </div>
-
-      {/* <iframe
-        width='560'
-        height='315'
-        src='https://www.artsteps.com/embed/6590b92942e13c54491b636e/560/315'
-        frameborder='0'
-        allowfullscreen
-      ></iframe> */}
-      {/* <div className='container grid grid-cols-2 md:grid-cols-3 gap-4'> */}
       <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
         <AcalypcaCard />
         <AnonymousGroupCard />
@@ -85,8 +92,6 @@ const page = () => {
         <SahelCard />
         <SoheilaCard />
       </div>
-
-      {/* <Gallery /> */}
     </section>
   );
 };

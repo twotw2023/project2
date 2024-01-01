@@ -52,14 +52,6 @@ export const data = {
         statement: '',
       },
       {
-        id: 'acalypca07',
-        media: 'video',
-        src: 'https://player.vimeo.com/video/898946732?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
-        title_eng: 'Panegyrists of Regime',
-        title_fa: 'مداحان رژیم',
-        statement: '',
-      },
-      {
         id: 'acalypca08',
         media: 'video',
         src: 'https://player.vimeo.com/video/898946770?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
@@ -727,12 +719,21 @@ export const data = {
         ],
         title_eng: `Us`,
         title_fa: '',
-        statement: `"We," born out of the bitter common sufferings, have become "us."
-        "We," who have opened our lips to protest and shamefully our frail bodies, which have become the hotter bed of bullets; have become "us."
-        "We," entangled in our own ashes, in the dark and obscure moments when our fellow traveler has not been, have stood alone and plunged into the deep abyss of sameness as if it were our eternal companion.       
-        "We," behind the ramparts of evil in war with hope and despair, weary of our own whims and restless for the future of freedom...       
-        "We," immersed in the sleep of power and contaminated sanctities, have given up and abandoned everything that became "us" and have distanced ourselves from our homeland.       
-        "We," the wanderers farther than the heart desires, sometimes detested in the outskirts of memory and reminiscence, in the imagination, sometimes estranged and sometimes longed for...
+        statement: `
+        "We," born out of the bitter common sufferings, have become "us."
+        "We," who have opened our lips to protest and shamefully our frail bodies,
+         which have become the hotter bed of bullets; have become "us."
+        "We," entangled in our own ashes, in the dark and obscure moments when our
+         fellow traveler has not been, have stood alone and plunged into the deep
+         abyss of sameness as if it were our eternal companion.       
+        "We," behind the ramparts of evil in war with hope and despair, weary of our
+         own whims and restless for the future of freedom...       
+        "We," immersed in the sleep of power and contaminated sanctities, have given
+         up and abandoned everything that became "us" and have distanced ourselves
+         from our homeland.       
+        "We," the wanderers farther than the heart desires, sometimes detested in the
+         outskirts of memory and reminiscence, in the imagination, sometimes estranged
+         and sometimes longed for...
         "We," fragments of "we"...
         `,
       },
@@ -1080,6 +1081,96 @@ export const data = {
         statement: `A5 linoleum print/digital edition
         2022
         `,
+      },
+    ],
+    bio: `Nasser Teymourpour, Born 1980 - Ilam, Iran.
+    Naser Teymourpour is a multimedia artist based in London. He has exhibited his works 
+    in four solo exhibitions and over twenty-five group exhibitions.
+    His works generally have social and political themes with a critical approach.
+    His works have been showcased in the first and second exhibitions of conceptual art 
+    at the Museum of Contemporary Arts in Tehran.
+    Nasser is one of the artists who is going to showcase their works in "The Writings on 
+    the Walls" online art exhibition.
+    
+    `,
+  },
+  12: {
+    image: '/exhibition/mandak/01',
+    artist: 'Mandak',
+    artworks: [
+      {
+        id: 'mandak01',
+        media: 'image',
+        src: '/exhibition/mandak/01.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak02',
+        media: 'image',
+        src: '/exhibition/mandak/02.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak03',
+        media: 'image',
+        src: '/exhibition/mandak/03.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak04',
+        media: 'image',
+        src: '/exhibition/mandak/05.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak05',
+        media: 'image',
+        src: '/exhibition/mandak/06.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak06',
+        media: 'image',
+        src: '/exhibition/mandak/07.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak07',
+        media: 'image',
+        src: '/exhibition/mandak/08.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak08',
+        media: 'image',
+        src: '/exhibition/mandak/09.jpeg',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'mandak09',
+        media: 'image',
+        src: '/exhibition/mandak/10.jpeg',
+        title_eng: `My name is  Mandak, born in Kurdistan, Iran. I grew up in a culture of resistance against global oppression, and I witnessed injustice in all its forms from my childhood. The first time I was arrested was during a protest in the city of Bukan when I was thirteen years old. We were more than fifteen children. They beat us, made us sign papers, and released us. It was my first commitment, and until my escape, they took commitments from me dozens of times. I have lived and worked in many areas of Kurdistan in Iran and Iraq, as well as many other regions in Iran. I am an artist, and art is both my language and my weapon, my profession, and my reason for being. Making historical models and retelling history without censorship and artistic protests were the reasons for not tolerating the situation there.
+        Now, for several years, I have been in the Netherlands, and my art, profession, language, and weapon are still integral parts of my life. In the hope of human and environmental freedom from the grip of global oppression and in the hope of equality in all its forms for all humans on this earthly sphere.
+        `,
+        title_fa: '',
+        statement: ``,
       },
     ],
     bio: `Nasser Teymourpour, Born 1980 - Ilam, Iran.
