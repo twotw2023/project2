@@ -46,6 +46,7 @@ const page = () => {
         Iran. Each piece constitutes a subtle but significant part of this
         shared narrative.
         <br />
+        <br />
         <strong>Artists:</strong> Acalypca, Afsaneh Salim Bayati, Ahoora, Ice
         Flower, Mandak, Nasser TeymourPour, Sahel Samavati, Samaneh Roghani,
         Shabnam Faraee, Soheila Bahramian, Zeinab Nikcheh & anonymous artists.
@@ -88,10 +89,12 @@ const page = () => {
         <SamanehCard />
         <AfsanehCard1 />
         <MandakCard />
-        <AfsanehCard2 />
+
         <AnonymousCard />
         <ZeinabCard />
         <SahelCard />
+
+        <AfsanehCard2 />
         <SoheilaCard />
       </div>
     </section>

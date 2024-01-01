@@ -42,7 +42,7 @@ const page = () => {
         className='mt-20 mb-20'
       >
         <iframe
-          src='https://player.vimeo.com/video/898949517?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+          src='https://player.vimeo.com/video/898949517?h=464b5784bd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
           frameborder='0'
           allow='autoplay; fullscreen; picture-in-picture'
           style={{

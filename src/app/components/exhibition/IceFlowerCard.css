@@ -47,6 +47,12 @@
   width: 100%;
   height: 50%;
 }
+.mySwiper-zeinab.imageCard {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .mySwiper:root {
   --swiper-theme-color: #990101;
 }
