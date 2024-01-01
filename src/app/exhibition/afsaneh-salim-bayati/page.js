@@ -5,7 +5,6 @@ import { SlideshowLightbox, initLightboxJS } from 'lightbox.js-react';
 import Image from 'next/image';
 import { data } from '@/app/lib/db';
 import './page.css';
-import VideoPlayer from '@/app/components/exhibition/VideoPlayer';
 
 const page = () => {
   const artistData = data[4];
