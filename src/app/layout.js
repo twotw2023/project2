@@ -1,4 +1,5 @@
 import 'react-multi-carousel/lib/styles.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import Footer from './components/Footer';
 import Nav from './components/Nav';
