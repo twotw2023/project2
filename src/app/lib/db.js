@@ -1201,4 +1201,51 @@ export const data = {
     
     `,
   },
+  13: {
+    image: '',
+    artist: 'Inner Jalz',
+    artworks: [
+      {
+        id: 'jalz01',
+        media: 'image',
+        src: '/exhibition/inner_jalz/01.png',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'jalz02',
+        media: 'image',
+        src: '/exhibition/inner_jalz/02.png',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'jalz03',
+        media: 'image',
+        src: '/exhibition/inner_jalz/03.png',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'jalz04',
+        media: 'image',
+        src: '/exhibition/inner_jalz/04.png',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+      {
+        id: 'jalz05',
+        media: 'image',
+        src: '/exhibition/inner_jalz/05.png',
+        title_eng: ``,
+        title_fa: '',
+        statement: ``,
+      },
+    ],
+    bio: '@innerjalz',
+  },
 };
