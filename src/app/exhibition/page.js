@@ -25,6 +25,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import OnlineExhibition from '../components/exhibition/OnlineExhibition';
 import MandakCard from '../components/exhibition/MandakCard';
+import InnerJalz from '../components/exhibition/InnerJalz';
 
 const page = () => {
   return (
@@ -53,7 +54,8 @@ const page = () => {
         <br />
         <strong>Artists:</strong> Acalypca, Afsaneh Salim Bayati, Ahoora, Ice
         Flower, Mandak, Nasser TeymourPour, Sahel Samavati, Samaneh Roghani,
-        Shabnam Faraee, Soheila Bahramian, Zeinab Nikcheh & anonymous artists.
+        Shabnam Faraee, Inner Jalz, Soheila Bahramian, Zeinab Nikcheh &
+        anonymous artists.
       </p>
       <h2 className='header'>Virtual Exhibition</h2>
       <p className={`${body.variable} exhibit__desc `}>
@@ -92,14 +94,13 @@ const page = () => {
         <ShabnamCard />
         <AhooraCard />
         <SamanehCard />
+        <InnerJalz />
         <AfsanehCard2 />
         <MandakCard />
-
         <AnonymousCard />
         <ZeinabCard />
         <SahelCard />
         <AfsanehCard1 />
-
         <SoheilaCard />
       </div>
     </section>

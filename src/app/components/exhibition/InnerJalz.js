@@ -17,8 +17,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const InnerJalz = () => {
-  const artistData = data[12];
+  const artistData = data[13];
   const artworks = artistData.artworks;
+
   return (
     <div className='flex flex-col items-center justify-center'>
       <Swiper

@@ -15,6 +15,7 @@ const page = () => {
     width: '300',
     height: '400',
   }));
+  console.log(artworks);
 
   useEffect(() => {
     initLightboxJS(process.env.NEXT_PUBLIC_LIGHTBOX, 'individual');
