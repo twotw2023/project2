@@ -1,19 +1,8 @@
 'use client';
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import './acalypcaCard.css';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-// import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-
-import { data } from '@/app/lib/db';
 import Link from 'next/link';
+
+import './AnonymousGroupCard.css';
+import { data } from '@/app/lib/db';
 
 const AnonymousGroupCard = () => {
   const artistData = data[1];
@@ -24,8 +13,6 @@ const AnonymousGroupCard = () => {
         src='https://player.vimeo.com/video/898949517?h=464b5784bd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
         allow='autoplay; fullscreen; picture-in-picture'
         title="font-family: 'Familjen Grotesk', sans-serif;"
-        // width={300}
-        // height={400}
         className='w-80 h-80'
         loading='lazy'
       ></iframe>
