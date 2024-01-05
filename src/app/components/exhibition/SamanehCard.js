@@ -45,6 +45,8 @@ const SamanehCard = () => {
               width={300}
               height={400}
               loading='lazy'
+              placeholder='blur'
+              blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
             />
           </SwiperSlide>
         ))}

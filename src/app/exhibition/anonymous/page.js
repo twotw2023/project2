@@ -49,6 +49,8 @@ const page = () => {
                 data-lightboxjs='lightbox1'
                 quality={80}
                 imgcaption={image.title}
+                placeholder='blur'
+                blurDataURL={image.src}
               />
               <p className='image-caption w-40 text-center'>{image.title}</p>
             </div>

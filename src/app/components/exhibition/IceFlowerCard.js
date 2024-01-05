@@ -43,6 +43,8 @@ const IceFlowerCard = () => {
               width={250}
               height={400}
               loading='lazy'
+              placeholder='blur'
+              blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
             />
             <p className='artist acalypca'>
               <strong>Artist:&nbsp;&nbsp;</strong>

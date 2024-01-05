@@ -6,7 +6,7 @@ import { body } from '../fonts';
 // anonymous_group: dynamic(() => import('./AnonymousGroupCard'))
 
 import './page.css';
-import AcalypcaCard from '../components/exhibition/acalypcaCard';
+import AcalypcaCard from '../components/exhibition/AcalypcaCard';
 import AnonymousGroupCard from '../components/exhibition/AnonymousGroupCard';
 import IceFlowerCard from '../components/exhibition/IceFlowerCard';
 import AhooraCard from '../components/exhibition/AhooraCard';
@@ -31,7 +31,7 @@ const page = () => {
   return (
     <section className='exhibit-container'>
       <p className={`${body.variable} exhibit__desc `}>
-        Through an Open Call on social media, we have gathered works from 13
+        Through an Open Call on social media, we have gathered works from 15
         artists, whose diverse perspectives and artistic expressions create a
         varied exhibition. Each artist, using unique tools from brushstrokes to
         pixels, explores themes of oppression, the struggle for freedom, hope,
@@ -63,7 +63,9 @@ const page = () => {
         gallery below. To view the complete works of each artist, including
         those in video format, please visit the ‘Selected Works’ section.{' '}
       </p>
-      <p>It's recommended to view the exhibition in fullscreen.</p>
+      <p className={`${body.variable} exhibit__desc `}>
+        It's recommended to view the exhibition in fullscreen.
+      </p>
       <OnlineExhibition />
 
       <div className='title-container'>
@@ -84,7 +86,7 @@ const page = () => {
           height={300}
         />
 
-        <h2 className='artist heading'>Selected Works</h2>
+        <h2 className='header'>Selected Works</h2>
       </div>
       <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
         <AcalypcaCard />

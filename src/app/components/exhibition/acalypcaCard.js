@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './acalypcaCard.css';
+import './AcalypcaCard.css';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -27,7 +27,7 @@ const AcalypcaCard = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className='mySwiper'
+        className='AcalypcaSwiper'
         lazyPreloadPrevNext={2}
         loop
       >
@@ -36,15 +36,25 @@ const AcalypcaCard = () => {
             key={artwork.id}
             className='flex flex-col bg-transparent'
           >
-            <iframe
+            {/* <iframe
               src={artwork.src}
               frameborder='0'
               allow='autoplay; fullscreen; picture-in-picture'
               loading='lazy'
               className='vimeo'
               title='01'
+              width={400}
+              height={400}
             ></iframe>
-            <script src='https://player.vimeo.com/api/player.js'></script>
+            <script src='https://player.vimeo.com/api/player.js'></script> */}
+            <iframe
+              src={artwork.src}
+              width={400}
+              height={200}
+              frameBorder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              title='09'
+            ></iframe>
             <p className='artist acalypca'>
               <strong>Artist:&nbsp;&nbsp;</strong>
               {artistData.artist}

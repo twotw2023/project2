@@ -44,6 +44,8 @@ const ZeinabCard = () => {
               width={400}
               height={300}
               loading='lazy'
+              placeholder='blur'
+              blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
             />
           </SwiperSlide>
         ))}

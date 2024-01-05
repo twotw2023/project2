@@ -47,6 +47,8 @@ const Gallery = (artworks) => {
               data-lightboxjs='lightbox1'
               quality={80}
               imgcaption={image.title}
+              placeholder='blur'
+              blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
             />
             <p className='image-caption w-40 text-center'>{image.title}</p>
           </div>

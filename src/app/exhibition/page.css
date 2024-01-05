@@ -58,6 +58,13 @@ h1 {
     margin-top: 0;
     padding-top: 3rem;
   }
+  .header {
+    font-size: 1.6rem;
+    padding-left: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5rem;
+  }
   .frameImages {
     display: none;
   }
@@ -73,7 +80,7 @@ h1 {
   .exhibit__desc {
     padding: 2rem 3rem;
     line-height: 1.9rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   .greenWave {
     width: 35%;

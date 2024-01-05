@@ -42,7 +42,11 @@ const page = () => {
         {artworks[0].statement}
       </p>
       <div className='image-container'>
-        <Image image={{ src: artworks[0].src, title: artworks[0].title_eng }} />
+        <Image
+          image={{ src: artworks[0].src, title: artworks[0].title_eng }}
+          width={auto}
+          hright={auto}
+        />
       </div>
       <h3 className='title artworkPage'>
         <strong>Title:&nbsp;&nbsp;</strong>
@@ -54,7 +58,11 @@ const page = () => {
       </p>
 
       <div className='image-container'>
-        <Image image={{ src: artworks[1].src, title: artworks[1].title_eng }} />
+        <Image
+          image={{ src: artworks[1].src, title: artworks[1].title_eng }}
+          width={auto}
+          hright={auto}
+        />
       </div>
     </div>
   );
