@@ -3,7 +3,6 @@
 import dynamic from 'next/dynamic';
 
 import { body } from '../fonts';
-// anonymous_group: dynamic(() => import('./AnonymousGroupCard'))
 
 import './page.css';
 import AcalypcaCard from '../components/exhibition/AcalypcaCard';
@@ -70,7 +69,6 @@ const page = () => {
 
       <div className='title-container'>
         <Image
-          // className='float-left hidden mt-5 h-2 md:block md:w-auto md:h-40 lg:block lg:h-20'
           className='frameImages'
           src='/arrow/frames.png'
           alt='frames'
