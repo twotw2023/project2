@@ -1,5 +1,4 @@
 'use client';
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './AcalypcaCard.css';
@@ -36,17 +35,6 @@ const AcalypcaCard = () => {
             key={artwork.id}
             className='flex flex-col bg-transparent'
           >
-            {/* <iframe
-              src={artwork.src}
-              frameborder='0'
-              allow='autoplay; fullscreen; picture-in-picture'
-              loading='lazy'
-              className='vimeo'
-              title='01'
-              width={400}
-              height={400}
-            ></iframe>
-            <script src='https://player.vimeo.com/api/player.js'></script> */}
             <iframe
               src={artwork.src}
               width={400}
@@ -66,14 +54,6 @@ const AcalypcaCard = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <p className='artist acalypca'>
-        <strong>Artist:&nbsp;&nbsp;</strong>
-        {artistData.artist}
-      </p> */}
-      {/* <h3 className='title'>
-        <strong>Title:&nbsp;&nbsp;</strong>
-        {artworks[1].title_eng}
-      </h3> */}
       <Link className='button' href='/exhibition/acalypca'>
         learn more
       </Link>

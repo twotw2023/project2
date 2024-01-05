@@ -1,15 +1,11 @@
 'use client';
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './IceFlowerCard.css';
+import './AfsanehCard.css';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-// import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import { data } from '@/app/lib/db';
@@ -49,14 +45,6 @@ const AfsanehCard1 = () => {
               placeholder='blur'
               blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
             />
-            {/* <p className='artist acalypca'>
-              <strong>Artist:&nbsp;&nbsp;</strong>
-              {artistData.artist}
-            </p>
-            <h3 className='titleCard'>
-              <strong>Title:&nbsp;&nbsp;</strong>
-              {artwork.title_eng}
-            </h3> */}
           </SwiperSlide>
         ))}
       </Swiper>
