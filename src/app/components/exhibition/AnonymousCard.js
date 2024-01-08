@@ -30,7 +30,6 @@ const AnonymousCard = () => {
         className='mySwiper-anonymous'
         lazyPreloadPrevNext={2}
         loop
-        style={{ width: '70%', height: '85%' }}
       >
         {artworks.map((artwork) => (
           <SwiperSlide
@@ -46,7 +45,7 @@ const AnonymousCard = () => {
               placeholder='blur'
               blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
             />
-            <p className='artist acalypca'>
+            <p className='artistCard'>
               <strong>Artist:&nbsp;&nbsp;</strong>
               {artistData.artist}
             </p>

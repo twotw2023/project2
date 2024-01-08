@@ -1,9 +1,3 @@
-.mySwiper,
-.mySwiper-anonymous {
-  width: 100%;
-  height: 100%;
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -22,76 +16,29 @@
   height: 100%;
   object-fit: cover;
 }
-.imageCard {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.title.iceflower {
-  font-size: 1.5vw;
-  font-family: 'Oswald', sans-serif;
-  color: #2b2b2b;
-}
-
-.mySwiper-shabnamFaraee {
-  width: 70%;
-  height: 83%;
-}
-.mySwiper-mandak {
-  width: 70%;
-  height: 61%;
-}
-.mySwiper-zeinab {
-  width: 100%;
-  height: 50%;
-}
-.mySwiper-zeinab.imageCard {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.mySwiper:root {
-  --swiper-theme-color: #990101;
-}
 
 .swiper-button-prev,
 .swiper-button-next {
   color: #990101;
 }
-.mySwiper-anonymous {
-  width: 70%;
-  height: 58%;
-}
+
+/* .artistCard {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  color: #2b2b2b;
+} */
 
 @media only screen and (max-width: 768px) {
-  .mySwiper-shabnamFaraee {
-    width: 85%;
-    height: 89%;
+  .titleCard {
+    font-size: 1.5rem;
   }
-  .mySwiper-anonymous {
-    width: 85%;
-    height: 90%;
-  }
-  .mySwiper-zeinab {
-    width: 85%;
-    height: 64%;
+  .artistCard {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 450px) {
-  .mySwiper {
-    width: 85%;
-  }
-  .mySwiper-zeinab {
-    width: 100%;
-    height: 72%;
-  }
-  .mySwiper-anonymous {
-    width: 85%;
-    height: 90%;
-  }
   .mySwiper-afsaneh {
     width: 85%;
   }

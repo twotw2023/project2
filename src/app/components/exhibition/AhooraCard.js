@@ -32,7 +32,7 @@ const AhooraCard = () => {
         Your browser does not support the audio tag.
       </video>
 
-      <p className='artist acalypca'>
+      <p className='artistCard'>
         <strong>Artist:&nbsp;&nbsp;</strong>
         {artistData.artist}
       </p>

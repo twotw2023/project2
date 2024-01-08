@@ -2,6 +2,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './AcalypcaCard.css';
+// import classes from './AcalypcaCard.module.css';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -37,13 +38,13 @@ const AcalypcaCard = () => {
           >
             <iframe
               src={artwork.src}
-              width={400}
-              height={200}
+              width={600}
+              height={300}
               frameBorder='0'
               allow='autoplay; fullscreen; picture-in-picture'
               title='09'
             ></iframe>
-            <p className='artist acalypca'>
+            <p className='artistCard'>
               <strong>Artist:&nbsp;&nbsp;</strong>
               {artistData.artist}
             </p>

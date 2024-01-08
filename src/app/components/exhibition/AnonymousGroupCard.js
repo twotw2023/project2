@@ -18,7 +18,7 @@ const AnonymousGroupCard = () => {
       ></iframe>
       <script src='https://player.vimeo.com/api/player.js'></script>
 
-      <p className='artist acalypca'>
+      <p className='artistCard'>
         <strong>Artist:&nbsp;&nbsp;</strong>
         {artistData.artist}
       </p>

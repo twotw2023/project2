@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import { body } from './fonts';
 import './layout.css';
 import './globals.css';
+import './locomotive-scroll.css';
 
 export const metadata = {
   title: 'The Writings on the Wall',

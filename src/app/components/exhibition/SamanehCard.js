@@ -51,7 +51,7 @@ const SamanehCard = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <p className='artist acalypca'>
+      <p className='artistCard'>
         <strong>Artist:&nbsp;&nbsp;</strong>
         {artistData.artist}
       </p>

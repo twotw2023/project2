@@ -33,7 +33,7 @@ const SoheilaCard = () => {
         // className='ml-auto mr-auto'
       ></iframe>
 
-      <p className='artist acalypca'>
+      <p className='artistCard'>
         <strong>Artist:&nbsp;&nbsp;</strong>
         {artistData.artist}
       </p>

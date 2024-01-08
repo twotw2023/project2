@@ -28,9 +28,8 @@ const IceFlowerCard = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className='mySwiper'
+        className='mySwiper-IceFlower'
         lazyPreloadPrevNext={2}
-        style={{ width: '70%' }}
       >
         {artworks.map((artwork) => (
           <SwiperSlide
@@ -46,7 +45,7 @@ const IceFlowerCard = () => {
               placeholder='blur'
               blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
             />
-            <p className='artist acalypca'>
+            <p className='artistCard'>
               <strong>Artist:&nbsp;&nbsp;</strong>
               {artistData.artist}
             </p>

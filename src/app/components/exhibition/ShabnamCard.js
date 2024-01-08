@@ -47,7 +47,7 @@ const ShabnamCard = () => {
                 placeholder='blur'
                 blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMsyS+pBwAEjgHYhgKGbwAAAABJRU5ErkJggg=='
               />
-              <p className='artist acalypca'>
+              <p className='artistCard'>
                 <strong>Artist:&nbsp;&nbsp;</strong>
                 {artistData.artist}
               </p>

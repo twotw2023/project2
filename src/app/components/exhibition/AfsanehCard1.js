@@ -48,7 +48,7 @@ const AfsanehCard1 = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <p className='artist acalypca'>
+      <p className='artistCard'>
         <strong>Artist:&nbsp;&nbsp;</strong>
         {artistData.artist}
       </p>
@@ -82,7 +82,7 @@ const AfsanehCard2 = () => {
         Your browser does not support the audio tag.
       </video>
 
-      <p className='artist acalypca'>
+      <p className='artistCard'>
         <strong>Artist:&nbsp;&nbsp;</strong>
         {artistData.artist}
       </p>
