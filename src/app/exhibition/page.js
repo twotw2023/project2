@@ -1,11 +1,9 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-
 import { body } from '../fonts';
 
 import './page.css';
-import AcalypcaCard from '../components/exhibition/AcalypcaCard';
+
 import AnonymousGroupCard from '../components/exhibition/AnonymousGroupCard';
 import IceFlowerCard from '../components/exhibition/IceFlowerCard';
 import AhooraCard from '../components/exhibition/AhooraCard';
@@ -25,6 +23,7 @@ import Link from 'next/link';
 import OnlineExhibition from '../components/exhibition/OnlineExhibition';
 import MandakCard from '../components/exhibition/MandakCard';
 import InnerJalz from '../components/exhibition/InnerJalz';
+import AcalypcaCard from '../components/exhibition/AcalypcaCard';
 
 const page = () => {
   return (
