@@ -134,7 +134,9 @@
     align-items: center;
   }
   .video__container video {
-    object-fit: contain;
+    object-fit: cover;
+    width: auto;
+    height: 100vh;
   }
   .container {
     flex-direction: column;
