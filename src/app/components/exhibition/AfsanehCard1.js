@@ -68,7 +68,7 @@ const AfsanehCard2 = () => {
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center w-auto'>
-      <video
+      {/* <video
         autoPlay
         muted
         playsInline
@@ -80,7 +80,17 @@ const AfsanehCard2 = () => {
       >
         <source src={artworks[1].src[0]} type='video/mp4' />
         Your browser does not support the audio tag.
-      </video>
+      </video> */}
+      <iframe
+        src='https://player.vimeo.com/video/898952731?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+        width='1024'
+        height='1280'
+        frameBorder='0'
+        allow='autoplay; fullscreen; picture-in-picture'
+        title='05'
+        className='w-80 h-80'
+        loading='lazy'
+      ></iframe>
 
       <p className='artistCard'>
         <strong>Artist:&nbsp;&nbsp;</strong>
