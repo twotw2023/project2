@@ -44,8 +44,8 @@ const page = () => {
       <div className='image-container'>
         <Image
           image={{ src: artworks[0].src, title: artworks[0].title_eng }}
-          width={auto}
-          heght={auto}
+          width={300}
+          heght={400}
         />
       </div>
       <h3 className='title artworkPage'>
@@ -60,8 +60,8 @@ const page = () => {
       <div className='image-container'>
         <Image
           image={{ src: artworks[1].src, title: artworks[1].title_eng }}
-          width={auto}
-          height={auto}
+          width={300}
+          height={400}
         />
       </div>
     </div>
