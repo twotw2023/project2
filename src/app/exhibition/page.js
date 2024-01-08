@@ -64,7 +64,7 @@ const page = () => {
       <p className={`${body.variable} exhibit__desc `}>
         It's recommended to view the exhibition in fullscreen.
       </p>
-      <OnlineExhibition />
+      {/* <OnlineExhibition /> */}
 
       <div className='title-container'>
         <Image
