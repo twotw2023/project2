@@ -7,6 +7,24 @@ const DynamicExhibition = dynamic(
     loading: () => <p>Loading...</p>,
   }
 );
+const DynamicAnonymousGroup = dynamic(
+  () => import('../components/exhibition/AnonymousGroupCard'),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+const DynamicIceFlower = dynamic(
+  () => import('../components/exhibition/IceFlowerCard'),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+const DynamicAhoora = dynamic(
+  () => import('../components/exhibition/AhooraCard'),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
 
 import './page.css';
 import { body } from '../fonts';
@@ -31,7 +49,8 @@ import AcalypcaCard from '../components/exhibition/AcalypcaCard';
 import { getLocalData } from '../lib/localdata';
 
 const page = async () => {
-  const data = await getLocalData();
+  const artistData = await getLocalData();
+  const data = await Promise.all(artistData);
   // console.log(data[0]);
   return (
     <section className='exhibit-container'>
@@ -42,8 +61,8 @@ const page = async () => {
         pixels, explores themes of oppression, the struggle for freedom, hope,
         and fear. <br />
         In the light of the fight against dictatorship in Iran and the vital
-        movement for Women's Life Freedom, this digital art exhibition has come
-        to life. Here, the artworks reflect on the diverse experiences and
+        movement for Women Life Freedom, this digital art exhibition has come to
+        life. Here, the artworks reflect on the diverse experiences and
         challenges of humanity. Each artist's choice of expression becomes an
         individual voice, a piece of a collective story shaped in different
         ways. Curators Azad Larki & anonymous artist, have intricately connected
@@ -96,10 +115,13 @@ const page = async () => {
       <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
         <AcalypcaCard data={data[0]} />
         <AnonymousGroupCard data={data[1]} />
+        {/* <DynamicAnonymousGroup data={data[1]} /> */}
         <IceFlowerCard data={data[2]} />
+        {/* <DynamicIceFlower data={data[2]} /> */}
         <NasserCard data={data[11]} />
         <ShabnamCard data={data[10]} />
         <AhooraCard data={data[3]} />
+        {/* <DynamicAhoora data={data[3]} /> */}
         <SamanehCard data={data[6]} />
         <InnerJalz data={data[13]} />
         <AfsanehCard2 data={data[4]} />

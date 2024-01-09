@@ -16,9 +16,10 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import Link from 'next/link';
 // import { getLocalData } from '@/app/lib/localdata';
 
-const AcalypcaCard = ({ data }) => {
+const AcalypcaCard = async ({ data }) => {
   const artistData = data;
   const artworks = artistData.artworks;
+
   // console.log(data);
   return (
     <div className='flex flex-col items-center justify-center'>
