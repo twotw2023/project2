@@ -2,6 +2,8 @@ import './page.css';
 import { body } from '../fonts';
 import Image from 'next/image';
 
+// import azad from '/about/Azad.png';
+
 const About = () => {
   return (
     <section className={`About`}>
@@ -28,9 +30,9 @@ const About = () => {
       <section className='azad__section'>
         <div className='azad__ImageContainer'>
           <Image
-            src='/about/azad--circle--transparent.png'
-            width={600}
-            height={600}
+            src='/about/about.png'
+            width='600'
+            height='600'
             alt='Azad Larki Profile Photo'
           />
         </div>

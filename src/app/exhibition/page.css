@@ -16,6 +16,21 @@ h1 {
   font-size: 1.5rem;
 }
 
+.exhibition-button {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 1.4rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  background-color: #870303;
+  color: aliceblue;
+  border-radius: 4rem;
+}
+.exhibition-button:hover {
+  background-color: rgba(240, 248, 255, 0.573);
+  color: #870303;
+  border: solid 2px #870303;
+  border-radius: 4rem;
+}
 .exhibit__desc {
   font-family: 'Familjen Grotesk', sans-serif;
   font-size: 2rem;

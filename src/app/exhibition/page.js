@@ -88,12 +88,12 @@ const page = async () => {
         gallery below. To view the complete works of each artist, including
         those in video format, please visit the ‘Selected Works’ section.{' '}
       </p>
-      <p className={`${body.variable} exhibit__desc `}>
+      {/* <p className={`${body.variable} exhibit__desc `}>
         It's recommended to view the exhibition in fullscreen.
-      </p>
+      </p> */}
       {/* <OnlineExhibition /> */}
       {/* <DynamicExhibition /> */}
-      <Link href='/exhibition/virtual-exhibition' style={{ color: 'red' }}>
+      <Link href='/exhibition/virtual-exhibition' className='exhibition-button'>
         Go to Virtual Exhibition
       </Link>
 
