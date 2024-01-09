@@ -11,12 +11,13 @@ import 'swiper/css/pagination';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
-import { data } from '@/app/lib/db';
+// import { data } from '@/app/lib/db';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const NasserCard = () => {
-  const artistData = data[11];
+const NasserCard = ({ data }) => {
+  const artistData = data;
+  // const artistData = data[11];
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center'>

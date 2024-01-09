@@ -11,12 +11,13 @@ import 'swiper/css/pagination';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
-import { data } from '@/app/lib/db';
+// import { data } from '@/app/lib/db';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const SamanehCard = () => {
-  const artistData = data[6];
+const SamanehCard = ({ data }) => {
+  const artistData = data;
+  // const artistData = data[6];
   const artworks = artistData.artworks[0];
   const artworkLinks = artworks.urls;
 

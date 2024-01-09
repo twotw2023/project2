@@ -195,7 +195,7 @@
   .video__container video {
     object-fit: cover;
     width: auto;
-    height: 70%;
+    height: 65vh;
   }
   .home__welcome.container {
     padding: 0;
@@ -243,10 +243,11 @@
   }
   .home__performance {
     background-image: url(/arrow/arrow--red.png);
-    background-repeat: repeat;
+    background-size: 18%;
+    background-repeat: no-repeat;
     // background-size: 30%;
-    background-position-x: -20%;
-    background-position-y: 50%;
+    background-position-x: 90%;
+    background-position-y: 15%;
   }
   .home__performance__textVideo:hover .home__performance__text {
     display: none;
@@ -265,127 +266,3 @@
     filter: blur(0) grayscale(0) brightness(1);
   }
 }
-
-/* --------------------------------locomotive-------------------------- */
-/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-// html.has-scroll-smooth {
-//   overflow: hidden;
-// }
-
-// html.has-scroll-dragging {
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-// }
-
-// .has-scroll-smooth body {
-//   overflow: hidden;
-// }
-
-// .has-scroll-smooth [data-scroll-container] {
-//   min-height: 100vh;
-// }
-
-// [data-scroll-direction='horizontal'] [data-scroll-container] {
-//   height: 100vh;
-//   display: inline-block;
-//   white-space: nowrap;
-// }
-
-// [data-scroll-direction='horizontal'] [data-scroll-section] {
-//   display: inline-block;
-//   vertical-align: top;
-//   white-space: nowrap;
-//   height: 100%;
-// }
-
-// .c-scrollbar {
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-//   width: 11px;
-//   height: 100%;
-//   transform-origin: center right;
-//   transition: transform 0.3s, opacity 0.3s;
-//   opacity: 0;
-// }
-// .c-scrollbar:hover {
-//   transform: scaleX(1.45);
-// }
-// .c-scrollbar:hover,
-// .has-scroll-scrolling .c-scrollbar,
-// .has-scroll-dragging .c-scrollbar {
-//   opacity: 1;
-// }
-// [data-scroll-direction='horizontal'] .c-scrollbar {
-//   width: 100%;
-//   height: 10px;
-//   top: auto;
-//   bottom: 0;
-//   transform: scaleY(1);
-// }
-// [data-scroll-direction='horizontal'] .c-scrollbar:hover {
-//   transform: scaleY(1.3);
-// }
-
-// .c-scrollbar_thumb {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   background-color: black;
-//   opacity: 0.5;
-//   width: 7px;
-//   border-radius: 10px;
-//   margin: 2px;
-//   cursor: -webkit-grab;
-//   cursor: grab;
-// }
-// .has-scroll-dragging .c-scrollbar_thumb {
-//   cursor: -webkit-grabbing;
-//   cursor: grabbing;
-// }
-// [data-scroll-direction='horizontal'] .c-scrollbar_thumb {
-//   right: auto;
-//   bottom: 0;
-// }
-
-// curtain effect
-// :root {
-//   --minh: 98vh;
-//   --color1: #2d2d2d;
-//   --color2: #fdfdfd;
-// }
-
-// .curtain {
-//   /** create the "split" background **/
-//   background-image: linear-gradient(
-//     to bottom,
-//     var(--color2) 50%,
-//     var(--color1) 50%
-//   );
-// }
-
-// /** add extra space to the bottom (need this for the "sticky" effect) **/
-// .curtain::after {
-//   content: '';
-//   display: block;
-//   min-height: var(--minh);
-// }
-
-// .invert {
-//   /** make the content sticky **/
-//   position: sticky;
-//   top: 20px;
-
-//   /** blend the content with the contrast effect **/
-//   mix-blend-mode: difference;
-
-//   /** center the content **/
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   /** set the minimum height of the section **/
-//   min-height: var(--minh);
-// }

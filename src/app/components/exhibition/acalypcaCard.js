@@ -12,12 +12,14 @@ import 'swiper/css/pagination';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
-import { data } from '@/app/lib/db';
+// import { data } from '@/app/lib/db';
 import Link from 'next/link';
+// import { getLocalData } from '@/app/lib/localdata';
 
-const AcalypcaCard = () => {
-  const artistData = data[0];
+const AcalypcaCard = ({ data }) => {
+  const artistData = data;
   const artworks = artistData.artworks;
+  // console.log(data);
   return (
     <div className='flex flex-col items-center justify-center'>
       <Swiper
@@ -36,22 +38,24 @@ const AcalypcaCard = () => {
             key={artwork.id}
             className='flex flex-col bg-transparent'
           >
-            <iframe
-              src={artwork.src}
-              width={600}
-              height={300}
-              frameBorder='0'
-              allow='autoplay; fullscreen; picture-in-picture'
-              title='09'
-            ></iframe>
-            <p className='artistCard'>
-              <strong>Artist:&nbsp;&nbsp;</strong>
-              {artistData.artist}
-            </p>
-            <h3 className='titleCard'>
-              <strong>Title:&nbsp;&nbsp;</strong>
-              {artwork.title_eng}
-            </h3>
+            <div>
+              <iframe
+                src={artwork.src}
+                width={600}
+                height={300}
+                frameBorder='0'
+                allow='autoplay; fullscreen; picture-in-picture'
+                title='09'
+              ></iframe>
+              <p className='artistCard'>
+                <strong>Artist:&nbsp;&nbsp;</strong>
+                {artistData.artist}
+              </p>
+              <h3 className='titleCard'>
+                <strong>Title:&nbsp;&nbsp;</strong>
+                {artwork.title_eng}
+              </h3>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

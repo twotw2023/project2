@@ -12,8 +12,9 @@ import { data } from '@/app/lib/db';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const AfsanehCard1 = () => {
-  const artistData = data[4];
+const AfsanehCard1 = ({ data }) => {
+  const artistData = data;
+  // const artistData = data[4];
   const artworks = artistData.artworks[0];
   const artworkLinks = artworks.urls;
 
@@ -63,8 +64,9 @@ const AfsanehCard1 = () => {
   );
 };
 
-const AfsanehCard2 = () => {
-  const artistData = data[4];
+const AfsanehCard2 = ({ data }) => {
+  const artistData = data;
+  // const artistData = data[4];
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center w-auto'>

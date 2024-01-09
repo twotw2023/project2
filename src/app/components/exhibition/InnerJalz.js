@@ -12,12 +12,13 @@ import 'swiper/css/pagination';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
-import { data } from '@/app/lib/db';
+// import { data } from '@/app/lib/db';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const InnerJalz = () => {
-  const artistData = data[13];
+const InnerJalz = ({ data }) => {
+  const artistData = data;
+  // const artistData = data[13];
   const artworks = artistData.artworks;
 
   return (

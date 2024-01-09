@@ -1,22 +1,12 @@
 'use client';
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 import './SoheilaCard.css';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-// import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import { data } from '@/app/lib/db';
 import Link from 'next/link';
 
-const SoheilaCard = () => {
-  const artistData = data[9];
+const SoheilaCard = ({ data }) => {
+  const artistData = data;
+  // const artistData = data[9];
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center w-auto'>

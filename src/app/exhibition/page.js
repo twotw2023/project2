@@ -1,9 +1,15 @@
-'use client';
+import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
-import { body } from '../fonts';
+const DynamicExhibition = dynamic(
+  () => import('../components/exhibition/OnlineExhibition'),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
 
 import './page.css';
-
+import { body } from '../fonts';
 import AnonymousGroupCard from '../components/exhibition/AnonymousGroupCard';
 import IceFlowerCard from '../components/exhibition/IceFlowerCard';
 import AhooraCard from '../components/exhibition/AhooraCard';
@@ -18,14 +24,15 @@ import SahelCard from '../components/exhibition/SahelCard';
 import SoheilaCard from '../components/exhibition/SoheilaCard.js';
 import ShabnamCard from '../components/exhibition/ShabnamCard';
 import NasserCard from '../components/exhibition/NasserCard';
-import Image from 'next/image';
-import Link from 'next/link';
 import OnlineExhibition from '../components/exhibition/OnlineExhibition';
 import MandakCard from '../components/exhibition/MandakCard';
 import InnerJalz from '../components/exhibition/InnerJalz';
 import AcalypcaCard from '../components/exhibition/AcalypcaCard';
+import { getLocalData } from '../lib/localdata';
 
-const page = () => {
+const page = async () => {
+  const data = await getLocalData();
+  // console.log(data[0]);
   return (
     <section className='exhibit-container'>
       <p className={`${body.variable} exhibit__desc `}>
@@ -65,6 +72,7 @@ const page = () => {
         It's recommended to view the exhibition in fullscreen.
       </p>
       {/* <OnlineExhibition /> */}
+      <DynamicExhibition />
 
       <div className='title-container'>
         <Image
@@ -86,106 +94,24 @@ const page = () => {
         <h2 className='header'>Selected Works</h2>
       </div>
       <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
-        <AcalypcaCard />
-        <AnonymousGroupCard />
-        <IceFlowerCard />
-        <NasserCard />
-        <ShabnamCard />
-        <AhooraCard />
-        <SamanehCard />
-        <InnerJalz />
-        <AfsanehCard2 />
-        <MandakCard />
-        <AnonymousCard />
-        <ZeinabCard />
-        <SahelCard />
-        <AfsanehCard1 />
-        <SoheilaCard />
+        <AcalypcaCard data={data[0]} />
+        <AnonymousGroupCard data={data[1]} />
+        <IceFlowerCard data={data[2]} />
+        <NasserCard data={data[11]} />
+        <ShabnamCard data={data[10]} />
+        <AhooraCard data={data[3]} />
+        <SamanehCard data={data[6]} />
+        <InnerJalz data={data[13]} />
+        <AfsanehCard2 data={data[4]} />
+        <MandakCard data={data[12]} />
+        <AnonymousCard data={data[5]} />
+        <ZeinabCard data={data[7]} />
+        <SahelCard data={data[8]} />
+        <AfsanehCard1 data={data[4]} />
+        <SoheilaCard data={data[9]} />
       </div>
     </section>
   );
 };
 
 export default page;
-
-// 'use client';
-// import Image from 'next/image';
-// import styles from './page.module.css';
-// import { useRef, useEffect, useState } from 'react';
-// import { gsap } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import Countdown, { calcTimeDelta } from 'react-countdown';
-
-// export default function Home() {
-//   const firstText = useRef(null);
-//   const secondText = useRef(null);
-//   const slider = useRef(null);
-//   let xPercent = 0;
-//   let direction = -1;
-
-//   // timer
-
-//   const lunchTime = calcTimeDelta('2024/01/01');
-//   // console.log(lunchTime);
-
-//   useEffect(() => {
-//     gsap.registerPlugin(ScrollTrigger);
-//     gsap.to(slider.current, {
-//       scrollTrigger: {
-//         trigger: document.documentElement,
-//         scrub: 0.25,
-//         start: 0,
-//         end: window.innerHeight,
-//         onUpdate: (e) => (direction = e.direction * -1),
-//       },
-//       x: '-500px',
-//     });
-//     requestAnimationFrame(animate);
-//   }, []);
-
-//   const animate = () => {
-//     if (xPercent < -100) {
-//       xPercent = 0;
-//     } else if (xPercent > 0) {
-//       xPercent = -100;
-//     }
-//     gsap.set(firstText.current, { xPercent: xPercent });
-//     gsap.set(secondText.current, { xPercent: xPercent });
-//     requestAnimationFrame(animate);
-//     xPercent += 0.1 * direction;
-//   };
-
-//   return (
-//     <main className={styles.main}>
-//       <div className={styles.container}>
-//         <div className={styles.images}>
-//           <Image
-//             src='/exhibition/a.png'
-//             width={3840}
-//             height={2400}
-//             alt='background'
-//             className={styles.exhibition__image}
-//           />
-//           <Image
-//             src='/exhibition/a.png'
-//             fill={true}
-//             alt='background'
-//             className={styles.mobile__image}
-//           />
-//         </div>
-//         <div className={styles.containerCount}>
-//           <h1>Exhibition Opening:</h1>
-//           <div className={styles.countDown}>
-//             <Countdown date={Date.now() + lunchTime.total} />
-//           </div>
-//         </div>
-//       </div>
-//       <div className={styles.sliderContainer}>
-//         <div ref={slider} className={styles.slider}>
-//           <p ref={firstText}>Coming Soon ...</p>
-//           <p ref={secondText}>Coming Soon ...</p>
-//         </div>
-//       </div>
-//     </main>
-//   );
-// }

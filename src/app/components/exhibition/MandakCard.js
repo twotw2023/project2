@@ -1,6 +1,5 @@
 'use client';
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './IceFlowerCard.css';
 
@@ -12,12 +11,13 @@ import 'swiper/css/pagination';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
-import { data } from '@/app/lib/db';
+// import { data } from '@/app/lib/db';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const MandakCard = () => {
-  const artistData = data[12];
+const MandakCard = ({ data }) => {
+  const artistData = data;
+  // const artistData = data[12];
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center'>

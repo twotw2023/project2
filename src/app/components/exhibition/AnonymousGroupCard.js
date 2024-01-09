@@ -2,10 +2,10 @@
 import Link from 'next/link';
 
 import './AnonymousGroupCard.css';
-import { data } from '@/app/lib/db';
+// import { data } from '@/app/lib/db';
 
-const AnonymousGroupCard = () => {
-  const artistData = data[1];
+const AnonymousGroupCard = ({ data }) => {
+  const artistData = data;
   const artworks = artistData.artworks;
   return (
     <div className='flex flex-col items-center justify-center w-auto'>
