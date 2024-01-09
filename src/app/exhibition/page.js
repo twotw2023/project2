@@ -47,6 +47,7 @@ import MandakCard from '../components/exhibition/MandakCard';
 import InnerJalz from '../components/exhibition/InnerJalz';
 import AcalypcaCard from '../components/exhibition/AcalypcaCard';
 import { getLocalData } from '../lib/localdata';
+import Link from 'next/link';
 
 const page = async () => {
   const artistData = await getLocalData();
@@ -91,7 +92,10 @@ const page = async () => {
         It's recommended to view the exhibition in fullscreen.
       </p>
       {/* <OnlineExhibition /> */}
-      <DynamicExhibition />
+      {/* <DynamicExhibition /> */}
+      <Link href='/exhibition/virtual-exhibition' style={{ color: 'red' }}>
+        Go to Virtual Exhibition
+      </Link>
 
       <div className='title-container'>
         <Image
